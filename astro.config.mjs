@@ -12,18 +12,10 @@ export default defineConfig({
     },
     vite: {
         server: {
-            allowedHosts: [
-                'yc04kc000okoog0cswc4gcs0.170.64.136.227.sslip.io',
-                'localhost',
-                '.sslip.io'
-            ]
+            allowedHosts: true
         },
         preview: {
-            allowedHosts: [
-                'yc04kc000okoog0cswc4gcs0.170.64.136.227.sslip.io',
-                'localhost',
-                '.sslip.io'
-            ]
+            allowedHosts: true
         }
     }
 });
