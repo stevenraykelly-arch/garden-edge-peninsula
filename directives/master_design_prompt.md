@@ -10,6 +10,8 @@
 *   **Key Differentiators:** [3 Unique Selling Points] (e.g., Family Owned, 24hr Guarantee, Insured)
 *   **Target Audience:** [Customer Personas]
 *   **Tone of Voice:** Friendly, Professional, Trustworthy
+*   **Brand Colors:** [Primary Hex] (e.g., #059669), [Secondary Hex]
+*   **Logo:** [Path to Logo] (Leave empty to auto-generate)
 *   **Must-Use Keywords:** [List 5-10 high-value keywords]
 
 ---
@@ -73,8 +75,10 @@ Every page MUST use a reusable `<SEO />` component:
 *   **Content Depth (FAQ & Silos):** MANDATORY. 
     *   **FAQ:** Every homepage must include a "Local Expert FAQ" section.
     *   **Silos:** You must create at least 4 dedicated Service Pages (e.g., `/services/retaining-walls`). Single-page sites are BANNED. Each service page must be 800+ words.
-    *   **Locations:** "Doorway Pages" are BANNED. Location pages (e.g., `/locations/service-suburb`) must contain 50% unique content specific to that suburb (e.g., mentioning specific estates, local statutes, or environment).
-    *   **Locations:** "Doorway Pages" are BANNED. Location pages (e.g., `/locations/service-suburb`) must contain 50% unique content specific to that suburb (e.g., mentioning specific estates, local statutes, or environment).
+    *   **Locations (The Librarian Protocol):** "Doorway Pages" are BANNED.
+        *   **The Handbook:** Every location page MUST include a "Landscape Handbook" section detailing specific local covenants, estates (e.g., "Timbertop"), or council regulations.
+        *   **Entity Anchors:** You MUST cite physical geography (creeks, soil types like "Sodic Clay") or specific local bodies (e.g., "Cardinia Shire").
+        *   **Schema:** Use `GeoCircle` (5km radius) instead of generic `City` to define exact service areas.
 *   **System Integration:** Update `App.tsx` (Routing), `Layout.tsx` (Linking), `sitemap.xml`, and `robots.txt` for every new page.
 *   **Global Navigation:** The `Header` and `Footer` MUST be present in `src/layouts/Layout.astro`. NEVER hardcode navigation manually into individual pages. Ensure links use absolute paths (e.g., `/#services`) to function from sub-pages (Silos).
 

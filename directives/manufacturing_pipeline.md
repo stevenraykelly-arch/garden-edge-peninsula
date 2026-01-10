@@ -28,16 +28,20 @@ Autonomous "Factory" for high-end trade sites using Astro (Static HTML) for maxi
     - Analyze their **Keywords** (to find ranking opportunities).
 3. **Context Gathering**: Understand the "Librarian" context - what verifiable facts does the AI need?
 
-### Phase 2: Keyword & Service Discovery
-1. **Expansion**: Identify 10+ geo-targeted and semantic keywords beyond the user's list.
-2. **Service Mapping**: Create a union list of "Standard Services" vs "Niche Services" based on competitor data.
+### Phase 2: Keyword & Entity Discovery
+1.  **Search:** "[Industry] regulations [Target Suburb]", "[Physical Entity] types [Target Suburb]" (e.g., Soil/Water/Rock), "[Target Suburb] local planning codes".
+2.  **Identify Entities:** List specific creeks, parks, council names, and estates to anchor the content.
+3.  **Keyword Expansion:** Find 3-5 high-volume keywords + 3 local long-tail questions.
 3. **Data Store**: Save brief to `.tmp/market_data.json`.
 
 ### Phase 3: Asset Creation
 1.  **Prompt Engineering:** Write photorealistic, research-backed prompts for unique images.
 2.  **Production:** Generate unique assets to `public/images/`.
     *   **Hero:** 1x Global Hero.
-    *   **Page-Specific:** 1-3x Unique images per Service/Location page (e.g., `retaining-detail.jpg`, `officer-estates.jpg`).
+3.  **Brand Identity (Logo/Favicon):**
+    *   **Check:** If USER provided a logo, copy to `public/images/logo.png`.
+    *   **Generate (If Null):** Generate a "Clean, Simple, Elegant" logo matching the brand colors. Save as `public/images/logo.png`.
+    *   **Favicon:** Generate a matching 64x64 favicon. Save as `public/favicon.ico`.
 
 ### Phase 4: Page Build & Component Assembly
 1. **Structure**: Use `src/layouts/Layout.astro` and `src/pages/index.astro`.
