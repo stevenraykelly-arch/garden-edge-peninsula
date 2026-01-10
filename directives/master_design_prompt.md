@@ -39,8 +39,12 @@ Default to these elevated aesthetic principles:
 *   **Mandatory:** Use the search tool to analyze local vegetation (e.g., gum trees vs. palms), architectural styles, and terrain (hinterland vs. coastal) for the target area.
 *   **Action:** Incorporate these specific regional details into image prompts to ensure local authenticity.
 
-**Rule #2: Zero Repetition**
-*   Never reuse an image. Every section must have a unique, contextually relevant visual asset.
+**Rule #2: Zero Repetition (Unique Images)**
+*   **Mandatory:** UNIQUE images only. Never reuse the same asset (e.g., hero.png) for multiple service cards. Each visual element must be distinct.
+
+**Rule #3: ABN & Legal Display**
+*   **Mandatory:** NEVER invent a dummy ABN. Only display an ABN if explicitly provided in the User Details.
+*   **Action:** If no ABN is provided, omit the line entirely.
 
 **Rule #3: Composition Guidelines**
 *   **Subject:** Focus on the work/result (the finished project) and the immediate environment.

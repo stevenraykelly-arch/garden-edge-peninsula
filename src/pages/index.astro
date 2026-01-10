@@ -26,14 +26,185 @@ const services = [
         title: "Soil Remediation & Drainage", 
         description: "Expert diagnosis and treatment for Pakenham's reactive clay soils. We install ag-drains, gypsum treatments, and organic amendments to prevent waterlogging.", 
         icon: CheckIcon, 
-        image: "/images/hero.png" 
+        image: "/images/soil_drainage.png" 
     },
     { 
         title: "Drought Tolerant Design", 
         description: "Water-wise landscape design using native Melaleuca and Acacia species. Beautiful, low-maintenance gardens that thrive in Pakenham's dry summers.", 
         icon: LeafIcon,
-        image: "/images/hero.png"
+        image: "/images/drought_design.png"
     }
+];
+
+const locations = ["Pakenham", "Officer", "Berwick", "Clyde North", "Narre Warren", "Beaconsfield", "Emerald"];
+---
+
+<Layout>
+    <SEO 
+        title="Pakenham Landscapers | Retaining Walls, Paving & Design"
+        description="Local Pakenham landscaping specialists. Family owned, fully insured. Expert retaining walls, paving, and indigenous planting for Casey Shire homes. 24hr fix guarantee."
+        canonical="/"
+    />
+
+    <!-- Background Texture -->
+    <div class="fixed inset-0 pointer-events-none opacity-[0.4] z-[100] bg-[url('https://www.transparenttextures.com/patterns/concrete-wall.png')] mix-blend-multiply"></div>
+
+    <main class="flex min-h-screen flex-col items-center font-sans text-slate-800 bg-slate-50 selection:bg-emerald-500 selection:text-white">
+        
+        {/* Navigation */}
+        <nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-emerald-100 transition-all duration-500">
+            <div class="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 bg-emerald-600 rounded-lg flex items-center justify-center text-white shadow-lg">
+                        <div class="w-7 h-7" set:html={LeafIcon} />
+                    </div>
+                    <div>
+                        <span class="block font-bold text-xl tracking-tight text-slate-900 leading-none">Pakenham <span class="text-emerald-600">Landscapers</span></span>
+                        <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400">Family Owned & Operated</span>
+                    </div>
+                </div>
+                <div class="hidden lg:flex gap-8 items-center text-sm font-bold text-slate-500">
+                    <a href="#services" class="hover:text-emerald-600 transition-colors">Services</a>
+                    <a href="#about" class="hover:text-emerald-600 transition-colors">Our Guarantee</a>
+                    <a href="mailto:info@landscaperspakenham.com.au" class="bg-emerald-600 text-white px-6 py-3 rounded-xl hover:bg-emerald-700 transition-all shadow-lg hover:shadow-emerald-200">
+                        Get a Free Quote
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        {/* Hero Section */}
+        <section class="relative w-full pt-40 pb-20 lg:pt-60 lg:pb-40 px-6 overflow-hidden">
+            <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+                <div class="relative z-10">
+                    <div class="inline-flex items-center gap-2 px-4 py-2 bg-emerald-50 text-emerald-700 rounded-full text-xs font-bold uppercase tracking-wider mb-8 border border-emerald-100">
+                        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Serving Casey Shire
+                    </div>
+                    <h1 class="text-5xl lg:text-7xl font-extrabold text-slate-900 leading-[1.1] mb-8 tracking-tight">
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-teal-500">Pakenham Landscapers</span> <br />
+                        Transforming Gardens.
+                    </h1>
+                    <p class="text-slate-600 text-lg lg:text-xl mb-10 max-w-lg leading-relaxed">
+                        From <strong class="text-emerald-700">structural retaining walls</strong> to drought-tolerant <strong class="text-emerald-700">indigenous planting</strong>. We understand Pakenham's clay soil and strict council guidelines.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#quote" class="px-8 py-4 bg-slate-900 text-white rounded-xl font-bold text-lg hover:bg-emerald-600 transition-colors shadow-xl flex items-center justify-center gap-2">
+                            Request Quote
+                        </a>
+                        <div class="px-8 py-4 bg-white border border-slate-200 text-slate-600 rounded-xl font-medium flex items-center justify-center gap-2 shadow-sm">
+                            <div class="w-5 h-5 text-emerald-500" set:html={CheckIcon} /> Fully Insured
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="absolute -inset-4 bg-emerald-500/10 rounded-[40px] rotate-3 blur-2xl"></div>
+                    <div class="relative rounded-[32px] overflow-hidden shadow-2xl border-4 border-white aspect-[4/3]">
+                        <img src="/images/hero.png" alt="Modern Pakenham Landscape Design" class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700" />
+                        
+                        {/* Guarantee Badge */}
+                        <div class="absolute bottom-6 left-6 bg-white/95 backdrop-blur p-6 rounded-2xl shadow-xl border border-emerald-100 max-w-xs">
+                            <div class="text-emerald-600 font-black text-sm uppercase tracking-wider mb-1">Our Promise</div>
+                            <div class="font-bold text-slate-900 text-lg leading-tight">"Not Right? We Fix it in 24hrs or You Don't Pay."</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        {/* Services Section */}
+        <section id="services" class="w-full py-32 bg-white relative">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-24">
+                    <h2 class="text-3xl lg:text-5xl font-bold text-slate-900 mb-6">Expert Landscape Gardeners Pakenham</h2>
+                    <p class="text-slate-500 text-lg max-w-2xl mx-auto">Specializing in new estate builds (Maple Grove, Pakenham East) and established property renovations.</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    {services.map(s => (
+                        <div class="group relative bg-slate-50 rounded-3xl overflow-hidden hover:shadow-2xl transition-all duration-500 border border-slate-100">
+                            <div class="h-64 overflow-hidden relative">
+                                <img src={s.image} alt={s.title} class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                                <div class="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent"></div>
+                            </div>
+                            <div class="p-8 relative">
+                                <div class="absolute -top-10 right-8 w-16 h-16 bg-white rounded-2xl flex items-center justify-center text-emerald-600 shadow-lg group-hover:bg-emerald-600 group-hover:text-white transition-colors duration-300">
+                                    <div class="w-8 h-8" set:html={s.icon} />
+                                </div>
+                                <h3 class="text-xl font-bold text-slate-900 mb-4 pr-12">{s.title}</h3>
+                                <p class="text-slate-500 leading-relaxed text-sm mb-6">{s.description}</p>
+                                <div class="text-emerald-600 font-bold text-xs uppercase tracking-widest group-hover:translate-x-2 transition-transform">Learn More →</div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </section>
+
+        {/* Librarian/AI Data & FAQ Section */}
+        <section class="w-full py-32 bg-slate-900 text-slate-300 px-6">
+            <div class="max-w-4xl mx-auto">
+                <div class="mb-16">
+                     <span class="text-emerald-500 font-bold tracking-widest uppercase text-xs">Technical Specifications</span>
+                     <h2 class="text-4xl lg:text-5xl font-bold text-white mt-4 mb-8">Building in Pakenham?</h2>
+                     <p class="text-lg text-slate-400">We build to the specific conditions of the Cardinia and Casey region.</p>
+                </div>
+
+                <div class="grid gap-6">
+                    <div class="bg-slate-800/50 p-8 rounded-2xl border border-slate-700 hover:border-emerald-500/50 transition-colors">
+                        <h4 class="text-white font-bold text-lg mb-2">Soil Management (Reactive Clay)</h4>
+                        <p class="text-sm leading-relaxed">Pakenham is known for its reactive clay soils (Kurosol). We always use a 100mm compacted crushed rock base for paving and proper agricultural drainage coils behind all retaining walls to prevent heave and cracking.</p>
+                    </div>
+                    <div class="bg-slate-800/50 p-8 rounded-2xl border border-slate-700 hover:border-emerald-500/50 transition-colors">
+                        <h4 class="text-white font-bold text-lg mb-2">Council Regulations (Casey Shire)</h4>
+                        <p class="text-sm leading-relaxed">For nature strips, we adhere to the 1200mm pedestrian clearance rule. For retaining walls, any structure over 1m high, or within 1m of an easement, will be engineered and permitted through our building surveyor partners.</p>
+                    </div>
+                     <div class="bg-slate-800/50 p-8 rounded-2xl border border-slate-700 hover:border-emerald-500/50 transition-colors">
+                        <h4 class="text-white font-bold text-lg mb-2">Indigenous Vegetation</h4>
+                        <p class="text-sm leading-relaxed">We prioritize local species like <em>Acacia suaveolens</em> and deep-rooted Eucalypts that thrive in our specific micro-climate, reducing water usage and supporting local biodiversity.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        {/* Locations Ticker */}
+        <div class="w-full py-12 bg-emerald-600 overflow-hidden relative">
+            <div class="flex gap-16 whitespace-nowrap animate-marquee opacity-80">
+                {[...locations, ...locations, ...locations].map(loc => (
+                    <span class="text-emerald-100 font-bold text-2xl uppercase tracking-widest flex items-center gap-8">
+                        {loc} <div class="w-2 h-2 bg-emerald-900/30 rounded-full"></div>
+                    </span>
+                ))}
+            </div>
+        </div>
+
+        {/* Footer */}
+        <footer class="w-full py-20 bg-slate-50 border-t border-slate-200 px-6">
+            <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-10">
+                <div class="text-center md:text-left">
+                    <div class="font-bold text-2xl text-slate-900 mb-2">Pakenham <span class="text-emerald-600">Landscapers</span></div>
+                    <p class="text-slate-500 text-sm">Residential & Commercial Landscaping across Casey Shire.</p>
+                    <a href="mailto:info@landscaperspakenham.com.au" class="text-slate-900 font-bold text-sm mt-4 block hover:text-emerald-600">info@landscaperspakenham.com.au</a>
+                </div>
+                <div class="flex gap-8 text-slate-400 text-sm font-medium">
+                    <span class="hover:text-slate-900 cursor-pointer">Privacy Policy</span>
+                    <span class="hover:text-slate-900 cursor-pointer">Terms of Service</span>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+    <style is:global>
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .animate-marquee {
+            animation: marquee 40s linear infinite;
+        }
+    </style>
+</Layout>
 ];
 
 const locations = ["Pakenham", "Officer", "Berwick", "Clyde North", "Narre Warren", "Beaconsfield", "Emerald"];
