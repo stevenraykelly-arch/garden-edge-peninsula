@@ -261,6 +261,10 @@ const schema = JSON.stringify({
         <div class="w-full py-12 bg-emerald-600 overflow-hidden relative">
             <div class="flex gap-16 whitespace-nowrap animate-marquee opacity-80">
                 {[...locations, ...locations, ...locations].map(loc => (
+                    loc === "Officer" ? 
+                    <a href="/locations/landscaping-officer" class="text-emerald-100 font-bold text-2xl uppercase tracking-widest flex items-center gap-8 hover:text-white transition-colors">
+                        {loc} <div class="w-2 h-2 bg-emerald-900/30 rounded-full"></div>
+                    </a> :
                     <span class="text-emerald-100 font-bold text-2xl uppercase tracking-widest flex items-center gap-8">
                         {loc} <div class="w-2 h-2 bg-emerald-900/30 rounded-full"></div>
                     </span>

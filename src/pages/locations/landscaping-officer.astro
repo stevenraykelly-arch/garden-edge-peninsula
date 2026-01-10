@@ -1,0 +1,83 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const locationSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "LandscapingBusiness",
+  "name": "Pakenham Landscapers - Officer Division",
+  "url": "https://pakenhamlandscapers.com.au/locations/landscaping-officer",
+  "telephone": "+61300000000",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Officer",
+    "addressRegion": "VIC",
+    "postalCode": "3809",
+    "addressCountry": "AU"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "Officer"
+  },
+  "description": "Specialist landscaping for Officer's new estates including Arcadia, Timbertop, and Grandvue. Experts in retaining walls for Officer's sloping blocks."
+});
+---
+
+<Layout 
+    title="Landscaping Officer 3809 | Retaining Walls & New Estates" 
+    description="Local landscapers for Officer, VIC. specialist knowledge of Arcadia, Timbertop & Grandvue estate guidelines. Retaining walls, driveway paving & drainage."
+    schema={locationSchema}
+>
+    <!-- Hero -->
+    <section class="relative py-24 bg-slate-900 overflow-hidden">
+        <div class="fixed inset-0 pointer-events-none opacity-[0.4] z-[0] bg-[url('https://www.transparenttextures.com/patterns/concrete-wall.png')] mix-blend-multiply"></div>
+        <div class="relative z-10 max-w-7xl mx-auto px-6">
+            <div class="inline-flex items-center gap-2 px-4 py-2 bg-emerald-900/50 text-emerald-400 rounded-full text-xs font-bold uppercase tracking-wider mb-8 border border-emerald-800">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Officer 3809 Specialists
+            </div>
+            <h1 class="text-5xl lg:text-6xl font-extrabold text-white mb-6">
+                Landscaping in <span class="text-emerald-500">Officer</span>.
+            </h1>
+            <p class="text-xl text-slate-300 max-w-2xl leading-relaxed">
+                From the rocky slopes of Timbertop to the heavy clay of Arcadia. We know the specific challenges of Officer's terrain.
+            </p>
+        </div>
+    </section>
+
+    <!-- Local Knowledge -->
+    <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-slate-900 mb-8">We Know Your Estate Guidelines</h2>
+            <div class="prose prose-lg text-slate-600">
+                <p>
+                    Building in Officer is different to Pakenham. The new master-planned communities here have strict design covenants. We deal with:
+                </p>
+                <div class="grid md:grid-cols-2 gap-8 my-8">
+                    <div class="bg-slate-50 p-6 rounded-xl border border-slate-200">
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Timbertop & Grandvue</h3>
+                        <p class="text-sm"><strong>The Challenge:</strong> Slope. These estates are hilly. You likely need significant retention.</p>
+                        <p class="text-sm mt-4 text-emerald-600 font-bold">✓ We engineer walls >1m.</p>
+                    </div>
+                    <div class="bg-slate-50 p-6 rounded-xl border border-slate-200">
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Arcadia & Kaduna Park</h3>
+                        <p class="text-sm"><strong>The Challenge:</strong> Waterlogging. The heavy clay flats here struggle to drain.</p>
+                        <p class="text-sm mt-4 text-emerald-600 font-bold">✓ We install perimeter Ag-Drains.</p>
+                    </div>
+                </div>
+                <p>
+                    We guarantee our designs meet the <strong>Officer Precinct Structure Plan (PSP)</strong> requirements for nature strip protection and front garden permeability.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map/CTA -->
+    <section class="py-20 bg-emerald-600">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold text-white mb-6">Live in Officer?</h2>
+            <p class="text-emerald-100 text-lg mb-10">We are 5 minutes down the Princes Highway. We can quote your new build landscape plan today.</p>
+            <a href="mailto:info@landscaperspakenham.com.au" class="inline-block bg-white text-emerald-800 font-bold px-8 py-4 rounded-xl hover:bg-slate-100 transition-colors shadow-lg">
+                Get an Officer Quote
+            </a>
+        </div>
+    </section>
+</Layout>

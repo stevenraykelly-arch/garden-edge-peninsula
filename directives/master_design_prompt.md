@@ -72,6 +72,7 @@ Every page MUST use a reusable `<SEO />` component:
 *   **Content Depth (FAQ & Silos):** MANDATORY. 
     *   **FAQ:** Every homepage must include a "Local Expert FAQ" section.
     *   **Silos:** You must create at least 4 dedicated Service Pages (e.g., `/services/retaining-walls`). Single-page sites are BANNED. Each service page must be 800+ words.
+    *   **Locations:** "Doorway Pages" are BANNED. Location pages (e.g., `/landscaping-officer`) must contain 50% unique content specific to that suburb (e.g., mentioning specific estates like "Arcadia", local soil conditions, or specific council overlays).
 *   **System Integration:** Update `App.tsx` (Routing), `Layout.tsx` (Linking), `sitemap.xml`, and `robots.txt` for every new page.
 
 ---
