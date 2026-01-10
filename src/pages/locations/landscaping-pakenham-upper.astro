@@ -1,0 +1,123 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const locationSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "LandscapingBusiness",
+  "name": "Pakenham Landscapers - Acreage Division",
+  "url": "https://pakenhamlandscapers.com.au/locations/landscaping-pakenham-upper",
+  "telephone": "+61300000000",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Pakenham Upper",
+    "addressRegion": "VIC",
+    "postalCode": "3810",
+    "addressCountry": "AU"
+  },
+  "areaServed": {
+    "@type": "GeoCircle",
+    "geoMidpoint": {
+        "@type": "GeoCoordinates",
+        "latitude": -38.0000,
+        "longitude": 145.4833
+    },
+    "geoRadius": "10000"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "07:00",
+      "closes": "17:00"
+    }
+  ],
+  "description": "Pakenham Upper acreage landscaping. Specialists in Bushfire Management Overlay (BMO) compliance, rural driveways, and large-scale planting."
+});
+---
+
+<Layout 
+    title="Landscaping Pakenham Upper 3810 | Acreage & BMO Design" 
+    description="Rural landscaping for Pakenham Upper. We understand the Bushfire Management Overlay (BMO) and creates stunning, safe acreage gardens."
+    schema={locationSchema}
+>
+    <!-- Hero -->
+    <section class="relative py-24 bg-slate-900 overflow-hidden">
+        <div class="fixed inset-0 pointer-events-none opacity-[0.4] z-[0] bg-[url('https://www.transparenttextures.com/patterns/concrete-wall.png')] mix-blend-multiply"></div>
+        <div class="relative z-10 max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+                 <div class="inline-flex items-center gap-2 px-4 py-2 bg-emerald-900/50 text-emerald-400 rounded-full text-xs font-bold uppercase tracking-wider mb-8 border border-emerald-800">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Acreage Specialists
+                </div>
+                <h1 class="text-5xl lg:text-6xl font-extrabold text-white mb-6">
+                    Pakenham Upper <span class="text-emerald-500">Acreage</span>.
+                </h1>
+                <p class="text-xl text-slate-300 max-w-2xl leading-relaxed">
+                    Big blocks, red soil, and big trees. We define your property borders and defend your home.
+                </p>
+            </div>
+             <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-700 aspect-video">
+                 <img src="/images/pakenham_upper_acreage.png" alt="Pakenham Upper Rural Driveway" class="w-full h-full object-cover" />
+            </div>
+        </div>
+    </section>
+
+    <!-- The Acreage Handbook -->
+    <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-slate-900 mb-8">The Acreage Handbook</h2>
+            <div class="prose prose-lg text-slate-600">
+                <p>
+                    Living in Pakenham Upper means living with nature. But with the beauty of Toomuc Valley comes the risk of bushfire and the challenge of managing acres of land.
+                </p>
+                
+                <div class="grid md:grid-cols-2 gap-8 my-10">
+                    <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 hover:border-emerald-500 transition-colors">
+                        <div class="text-xs font-bold text-emerald-600 uppercase tracking-widest mb-2">Safety Profile</div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-4">Bushfire Management (BMO)</h3>
+                        <p class="text-sm mb-4"><strong>The Risk:</strong> High fuel load. If you are near Bunyip State Park, you are in the fire zone.</p>
+                        <p class="text-sm mb-4"><strong>The Solution:</strong> "Defendable Space". We remove flammable undergrowth and plant fire-retardant species (succulents, deciduous trees) near the home to slow flame spread.</p>
+                        <ul class="text-sm font-bold text-emerald-700 space-y-2 mt-4">
+                            <li>✓ Fuel Reduction Zones</li>
+                            <li>✓ Access Track Construction</li>
+                        </ul>
+                    </div>
+                    <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 hover:border-emerald-500 transition-colors">
+                        <div class="text-xs font-bold text-emerald-600 uppercase tracking-widest mb-2">Growth Profile</div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-4">Rich Red Mountain Soil</h3>
+                        <p class="text-sm mb-4"><strong>The Soil:</strong> The famous "Potato Soil" of the region. It's incredibly fertile but gets boggy in winter.</p>
+                        <p class="text-sm mb-4"><strong>The Solution:</strong> This soil grows fruit trees and veggies like magic. We design productive gardens and install heavy-duty drainage for your driveway so you don't get bogged.</p>
+                        <ul class="text-sm font-bold text-emerald-700 space-y-2 mt-4">
+                            <li>✓ Crushed Rock Driveways</li>
+                            <li>✓ Productive Orchards</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-emerald-50 p-8 rounded-2xl border border-emerald-100 my-10">
+                    <h3 class="text-xl font-bold text-emerald-900 mb-4">Rural Design FAQ</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <h4 class="font-bold text-slate-900">What are the rules for CFA Access?</h4>
+                            <p class="text-sm text-slate-700 mt-1">If you are building new in a BMO, your driveway must support a 15-tonne fire truck. We build to this heavy-duty spec with proper clearance heights.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-900">Best fencing for 5 acres?</h4>
+                            <p class="text-sm text-slate-700 mt-1">Post and Rail with mesh. It keeps dogs in, keeps roos out (mostly), and matches the rural aesthetic perfectly.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-20 bg-emerald-600">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold text-white mb-6">Manage Your Acreage</h2>
+            <p class="text-emerald-100 text-lg mb-10">From driveways to fire-safe gardens, we have the machinery to handle big jobs.</p>
+            <a href="mailto:info@landscaperspakenham.com.au" class="inline-block bg-white text-emerald-800 font-bold px-8 py-4 rounded-xl hover:bg-slate-100 transition-colors shadow-lg">
+                Get an Acreage Quote
+            </a>
+        </div>
+    </section>
+</Layout>

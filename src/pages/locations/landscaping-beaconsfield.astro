@@ -1,0 +1,123 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const locationSchema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "LandscapingBusiness",
+  "name": "Pakenham Landscapers - Beaconsfield Division",
+  "url": "https://pakenhamlandscapers.com.au/locations/landscaping-beaconsfield",
+  "telephone": "+61300000000",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Beaconsfield",
+    "addressRegion": "VIC",
+    "postalCode": "3807",
+    "addressCountry": "AU"
+  },
+  "areaServed": {
+    "@type": "GeoCircle",
+    "geoMidpoint": {
+        "@type": "GeoCoordinates",
+        "latitude": -38.0510,
+        "longitude": 145.3780
+    },
+    "geoRadius": "5000"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "07:00",
+      "closes": "17:00"
+    }
+  ],
+  "description": "Beaconsfield steep block landscaping. Experts in structural retaining walls for Beaconsfield's Silurian Mudstone slopes and modern terraced gardens."
+});
+---
+
+<Layout 
+    title="Landscaping Beaconsfield 3807 | Retaining Walls & Slopes" 
+    description="Structural landscaping for Beaconsfield's hilly terrain. We build engineered retaining walls to conquer the slope and create usable garden space."
+    schema={locationSchema}
+>
+    <!-- Hero -->
+    <section class="relative py-24 bg-slate-900 overflow-hidden">
+        <div class="fixed inset-0 pointer-events-none opacity-[0.4] z-[0] bg-[url('https://www.transparenttextures.com/patterns/concrete-wall.png')] mix-blend-multiply"></div>
+        <div class="relative z-10 max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+                 <div class="inline-flex items-center gap-2 px-4 py-2 bg-emerald-900/50 text-emerald-400 rounded-full text-xs font-bold uppercase tracking-wider mb-8 border border-emerald-800">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Slope Engineers
+                </div>
+                <h1 class="text-5xl lg:text-6xl font-extrabold text-white mb-6">
+                    Landscaping in <span class="text-emerald-500">Beaconsfield 3807</span>.
+                </h1>
+                <p class="text-xl text-slate-300 max-w-2xl leading-relaxed">
+                    Where the suburbs meet the hills. We turn steep, unusable slopes into beautiful terraced gardens.
+                </p>
+            </div>
+             <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-700 aspect-video">
+                 <img src="/images/beaconsfield_slope_wall.png" alt="Beaconsfield Retaining Wall Landscaping" class="w-full h-full object-cover" />
+            </div>
+        </div>
+    </section>
+
+    <!-- The Beaconsfield Handbook -->
+    <section class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-slate-900 mb-8">The Beaconsfield Landscaping Handbook</h2>
+            <div class="prose prose-lg text-slate-600">
+                <p>
+                    Beaconsfield is famous for two things: beautiful views and challenging slopes. If you are building north of the Highway near Holm Park, you are dealing with significant gradients.
+                </p>
+                
+                <div class="grid md:grid-cols-2 gap-8 my-10">
+                    <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 hover:border-emerald-500 transition-colors">
+                        <div class="text-xs font-bold text-emerald-600 uppercase tracking-widest mb-2">Build Profile</div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-4">The Geology: Rock</h3>
+                        <p class="text-sm mb-4"><strong>The Soil:</strong> Silurian Mudstone. It's hard digging.</p>
+                        <p class="text-sm mb-4"><strong>The Solution:</strong> We bring heavy machinery (5-tonne excavators with rock breakers) to site. We don't struggle with the ground; we engineer it.</p>
+                        <ul class="text-sm font-bold text-emerald-700 space-y-2 mt-4">
+                            <li>✓ Rock Breaking</li>
+                            <li>✓ Heavy Excavation</li>
+                        </ul>
+                    </div>
+                    <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200 hover:border-emerald-500 transition-colors">
+                        <div class="text-xs font-bold text-emerald-600 uppercase tracking-widest mb-2">Build Profile</div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-4">The Topography: Steep</h3>
+                        <p class="text-sm mb-4"><strong>The Challenge:</strong> Erosion and lack of flat space.</p>
+                        <p class="text-sm mb-4"><strong>The Solution:</strong> Multi-tier retaining walls. We step the block to create flat "rooms" for lawns, pools, or entertaining areas.</p>
+                        <ul class="text-sm font-bold text-emerald-700 space-y-2 mt-4">
+                            <li>✓ Steel & Concrete Walls</li>
+                            <li>✓ Terraced Gardens</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-emerald-50 p-8 rounded-2xl border border-emerald-100 my-10">
+                    <h3 class="text-xl font-bold text-emerald-900 mb-4">Hillside Build FAQ</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <h4 class="font-bold text-slate-900">Do I need a structural engineer?</h4>
+                            <p class="text-sm text-slate-700 mt-1">For any retaining wall over 1m high, yes. Cardinia Shire requires a building permit and engineering computations. We handle this entire process for you.</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-900">How do you handle drainage on a hill?</h4>
+                            <p class="text-sm text-slate-700 mt-1">Critical question. We install "Agricultural Drains" behind every wall and route stormwater to the legal point of discharge (LPD) to prevent your lower yard from flooding.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-20 bg-emerald-600">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold text-white mb-6">Conquer Your Slope</h2>
+            <p class="text-emerald-100 text-lg mb-10">Don't let a steep block limit your lifestyle. We turn hills into assets.</p>
+            <a href="mailto:info@landscaperspakenham.com.au" class="inline-block bg-white text-emerald-800 font-bold px-8 py-4 rounded-xl hover:bg-slate-100 transition-colors shadow-lg">
+                Get a Beaconsfield Quote
+            </a>
+        </div>
+    </section>
+</Layout>
