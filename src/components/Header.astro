@@ -15,7 +15,20 @@ const LeafIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
         </a>
         <div class="hidden lg:flex gap-8 items-center text-sm font-bold text-slate-500">
             <a href="/#services" class="hover:text-emerald-600 transition-colors">Services</a>
-            <a href="/locations/landscaping-officer" class="hover:text-emerald-600 transition-colors">Locations</a>
+            <div class="relative group">
+                <button class="flex items-center gap-1 hover:text-emerald-600 transition-colors py-8">
+                    Locations
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="group-hover:rotate-180 transition-transform"><path d="m6 9 6 6 6-6"/></svg>
+                </button>
+                <div class="absolute top-full -left-4 pt-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
+                    <div class="bg-white rounded-xl shadow-xl border border-slate-100 p-2 w-56 flex flex-col gap-1 overflow-hidden">
+                        <a href="/locations/landscaping-officer" class="block px-4 py-3 hover:bg-emerald-50 text-slate-600 hover:text-emerald-700 rounded-lg transition-colors">Officer 3809</a>
+                        <a href="/locations/landscaping-berwick" class="block px-4 py-3 hover:bg-emerald-50 text-slate-600 hover:text-emerald-700 rounded-lg transition-colors">Berwick 3806</a>
+                        <a href="/locations/landscaping-beaconsfield" class="block px-4 py-3 hover:bg-emerald-50 text-slate-600 hover:text-emerald-700 rounded-lg transition-colors">Beaconsfield 3807</a>
+                        <a href="/locations/landscaping-pakenham-upper" class="block px-4 py-3 hover:bg-emerald-50 text-slate-600 hover:text-emerald-700 rounded-lg transition-colors">Pakenham Upper 3810</a>
+                    </div>
+                </div>
+            </div>
             <a href="mailto:info@landscaperspakenham.com.au" class="bg-emerald-600 text-white px-6 py-3 rounded-xl hover:bg-emerald-700 transition-all shadow-lg hover:shadow-emerald-200">
                 Get a Free Quote
             </a>
