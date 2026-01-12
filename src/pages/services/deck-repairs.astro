@@ -1,0 +1,130 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ContactForm from '../../components/ContactForm.astro';
+
+const schema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "name": "Deck Repairs & Restoration Phillip Island",
+      "provider": {
+        "@type": "HomeAndConstructionBusiness",
+        "name": "Mr Home Assist",
+        "image": "https://mrhomeassist.com.au/images/decks.jpg"
+      },
+      "areaServed": ["Cowes", "San Remo", "Ventnor", "Surf Beach"],
+      "description": "Specialist timber deck repairs and restoration for Phillip Island coastal homes. Board replacement, stainless steel re-screwing, and Cutek oiling."
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why are my decking screws rusting?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In Phillip Island's salt-air environment, standard galvanized screws corrode quickly, causing boards to lift. We only use 316 Marine Grade Stainless Steel screws to prevent this."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I use paint or oil on my coastal deck?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Never paint a deck in a coastal zone. The sun will cause it to blister and peel. We strictly use penetrating oils like Cutek Extreme, which stabilize the timber from within."
+          }
+        }
+      ]
+    }
+  ]
+});
+---
+
+<Layout title="Deck Repairs Phillip Island | Restoration & Oiling Services" description="High-end deck restoration for Cowes & San Remo. We fix lifting boards, rusted screws, and apply Cutek oils. 316 Marine Grade Stainless Steel guarantee." schema={schema}>
+    
+    <!-- Hero -->
+    <section class="relative bg-slate-900 py-32 lg:py-48 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="/images/decks.jpg" alt="Stainless steel decking screws being installed into Merbau timber" class="w-full h-full object-cover opacity-30" />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/50 to-transparent"></div>
+        </div>
+        <div class="relative z-10 max-w-7xl mx-auto px-6">
+            <h1 class="text-4xl lg:text-6xl font-extrabold text-white mb-6">
+                Deck Repairs & <span class="text-emerald-500">Restoration</span>
+            </h1>
+            <p class="text-xl text-slate-300 max-w-2xl leading-relaxed mb-8">
+                The Phillip Island sun and Bass Stripe salt spray are brutal on timber decks. We don't just "paint over" the rot; we structurally repair your outdoor entertaining area using marine-grade materials.
+            </p>
+            <a href="#contact" class="inline-block bg-emerald-600 text-white font-bold px-8 py-4 rounded-xl hover:bg-emerald-500 transition-colors">
+                Get a Free Deck Assessment
+            </a>
+        </div>
+    </section>
+
+    <!-- The Problem & Solution -->
+    <section class="py-24 bg-white px-6">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold text-slate-900 mb-8">Why Phillip Island Decks Fail</h2>
+            <div class="prose prose-lg text-slate-600 mb-16">
+                <p>
+                    Living in Cowes or San Remo means your property is constantly exposed to salt-laden winds from Western Port Bay and the Bass Strait. This specific micro-climate causes unique problems for timber structures that generic handymen often miss.
+                </p>
+                <p>
+                    The most common issue we see is <strong>Galvanic Corrosion</strong>. This happens when standard galvanized screws are used. The salt air eats through the zinc coating, causing the screw to rust and snap. Once the fixing fails, your Merbau or Spotted Gum boards begin to cup and lift, creating a dangerous trip hazard.
+                </p>
+                <h3>Our Repair Protocol</h3>
+                <ol>
+                    <li><strong>Structural Audit:</strong> We check your sub-floor bearers and joists for dry rot or termite damage.</li>
+                    <li><strong>Board Replacement:</strong> We carefully remove rotten boards and source matching timber (Merbau, Spotted Gum, or Treated Pine).</li>
+                    <li><strong>316 Stainless Upgrade:</strong> We re-screw loose boards using only 316 Marine Grade Stainless Steel screws. These are impervious to salt corrosion.</li>
+                    <li><strong>Deep Cleaning:</strong> We use a high-pressure wash and specialized timber cleaner to strip back grey oxidation.</li>
+                    <li><strong>Preservation:</strong> We apply two coats of Cutek Extreme CD50 penetrating oil. Unlike surface coatings that peel, Cutek soaks deep into the wood grain, stabilizing the timber and preventing water ingress.</li>
+                </ol>
+            </div>
+            
+            <!-- The Handbook (Librarian Section) -->
+            <div class="bg-slate-50 border border-emerald-100 rounded-3xl p-10">
+                <div class="flex items-center gap-3 mb-6">
+                    <span class="bg-emerald-100 text-emerald-700 p-2 rounded-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
+                    </span>
+                    <h3 class="text-2xl font-bold text-slate-900 m-0">The Coastal Timber Handbook</h3>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8 text-sm">
+                    <div>
+                        <h4 class="font-bold text-emerald-700 mb-2">Permit Regulations (Bass Coast Shire)</h4>
+                        <p class="text-slate-600 mb-4">
+                            If you are <strong>replacing</strong> existing decking boards on a like-for-like basis, a building permit is generally not required. However, if you are extending the deck area or replacing structural members (bearers/joists), a permit may be triggered. We handle this assessment for you.
+                        </p>
+                        <h4 class="font-bold text-emerald-700 mb-2">Bushfire Overlays (BAL)</h4>
+                        <p class="text-slate-600">
+                            Many areas in Ventnor and Cape Woolamai have Bushfire Attack Level (BAL) ratings. This may strictly limit the type of timber you can use. We can upgrade your deck to BAL-compliant non-combustible materials if required.
+                        </p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-emerald-700 mb-2">Specific Timber Species</h4>
+                        <p class="text-slate-600 mb-4">
+                            <strong>Merbau (Kwila):</strong> Most common, tannin-rich. Requires "bleeding" before oiling to prevent staining your concrete.
+                            <br/><br/>
+                            <strong>Spotted Gum:</strong> Australian native, highly durable (Class 1). Very dense, requiring pre-drilling even for self-tapping screws.
+                            <br/><br/>
+                            <strong>Silvertop Ash:</strong> A local Victorian timber, often specified in BAL areas for its fire resistance.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-20 bg-emerald-600 text-center px-6">
+        <h2 class="text-3xl font-bold text-white mb-6">Is your deck ready for summer?</h2>
+        <p class="text-emerald-100 text-lg mb-10 max-w-2xl mx-auto">Don't let a dangerous deck ruin your holiday. We offer fast turnarounds for holiday rental properties.</p>
+        <div class="flex justify-center gap-4">
+            <a href="tel:56789012" class="bg-white text-emerald-800 font-bold px-8 py-4 rounded-xl shadow-lg hover:bg-slate-100 transition-colors">Call 56 789 012</a>
+        </div>
+    </section>
+
+</Layout>
