@@ -12,7 +12,7 @@ SCOPES = [
 ]
 SERVICE_ACCOUNT_FILE = 'execution/service_account.json'
 SITE_URL = 'https://landscaperspakenham.com.au/'
-SITEMAP_URL = 'https://landscaperspakenham.com.au/sitemap-index.xml'
+SITEMAP_URL = 'https://landscaperspakenham.com.au/sitemap.xml'
 
 def get_service(api_name, api_version):
     """Authenticates and returns the specified Google API service."""

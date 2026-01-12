@@ -3,17 +3,17 @@
 ## 1. Setup: Business Details (USER: FILL THIS IN)
 **Copy and paste this section with your specific details before running the prompt.**
 
-*   **Business Name:** [Business Name] (e.g., Pakenham Landscapers)
-*   **Primary Service:** [Primary Trade] (e.g., Residential & Commercial Landscaping)
-*   **Target Area:** [City/Region] (e.g., Pakenham and Casey Shire, VIC)
-*   **Contact Info:** [Email/Phone]
-*   **Key Differentiators:** [3 Unique Selling Points] (e.g., Family Owned, 24hr Guarantee, Insured)
-*   **Target Audience:** [Customer Personas]
-*   **Tone of Voice:** Friendly, Professional, Trustworthy
-*   **Brand Colors:** [Primary Hex] (e.g., #059669), [Secondary Hex]
-*   **Logo:** [Path to Logo] (Recommended: Horizontal layout, 4:1 ratio, transparent background)
-*   **Custom Domain:** landscaperspakenham.com.au
-*   **Must-Use Keywords:** [List 5-10 high-value keywords]
+*   **Business Name:** Mr Home Assist
+*   **Primary Service:** Handyman, Building Maintenance
+*   **Target Area:** Phillip Island, Vic. Bass Coast, San Remo
+*   **Contact Info:** info@mrhomeassist.com.au, 56 789 012
+*   **Key Differentiators:** Ontime, Upfront Pricing, 25+ years of experience
+*   **Target Audience:** Homeowners (Living in, Air BNB, Holiday homes), Real Estate managers
+*   **Tone of Voice:** Friendly but authoritative
+*   **Brand Colors:** #0C4A6E (Deep Navy), #F97316 (Safety Orange)
+*   **Logo:** public/logo.png
+*   **Custom Domain:** mrhomeassist.com.au
+*   **Must-Use Keywords:** Handyman Phillip Island, Handyman Cowes, Handyman Bass Coast, Deck repairs, Deck rejuvenation
 
 ---
 

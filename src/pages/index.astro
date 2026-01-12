@@ -1,11 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import ServiceCard from '../components/ServiceCard.astro';
-import SEO from '../components/SEO.astro';
-
 import ExplainerVideo from '../components/ExplainerVideo.astro';
 
-// Icons (Nature/Construction themed)
+// Icons
 const LeafIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 5.2 6 1.5 2.3 3 3.7 3 5 0 2.9-2.6 5.6-7.5 7a8 8 0 0 1-5.3 0c-4.9-1.4-7.5-4-7.5-7a8 8 0 0 1-5.3 0C8.4 14.4 11 17.1 11 20Z"/></svg>`;
 const WallIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h18v18H3z"/><path d="M21 9H3"/><path d="M21 15H3"/><path d="M12 3v18"/><path d="M12 9h9"/><path d="M3 15h9"/></svg>`;
 const SunIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>`;
@@ -13,68 +10,68 @@ const CheckIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24
 
 const services = [
     { 
-        title: "Retaining Walls & Excavation", 
-        description: "Specialist construction for Pakenham's sloping blocks. Compliant up to 1m height without permit. Concrete sleeper and timber options.", 
-        icon: WallIcon,
-        image: "/images/retaining.png",
-        link: "/services/retaining-walls"
-    },
-    { 
-        title: "Paving & Hardscaping", 
-        description: "High-end bluestone and crazy paving options. We design functional paths and entertainment areas that handle Pakenham's soil movement.", 
+        title: "Deck Repairs & Rejuvenation", 
+        description: "Specialist deck restoration for coastal conditions. We replace rotted boards, re-screw loose fixings with stainless steel, and apply premium Cutek oils.", 
         icon: SunIcon,
-        image: "/images/paving.png",
-        link: "/services/paving"
+        image: "/images/hero.jpg", 
+        link: "#contact"
     },
     { 
-        title: "Soil Remediation & Drainage", 
-        description: "Expert diagnosis and treatment for Pakenham's reactive clay soils. We install ag-drains, gypsum treatments, and organic amendments to prevent waterlogging.", 
+        title: "General Handyman Repairs", 
+        description: "The 'Fix-It' list expert. Door adjustments, plaster patching, flyscreen replacement, and general property upkeep for Phillip Island homes.", 
+        icon: WallIcon,
+        image: "/images/hero.jpg",
+        link: "#contact"
+    },
+    { 
+        title: "Holiday Home Maintenance", 
+        description: "Reliable maintenance for Airbnb and holiday rentals. We ensure your property is guest-ready with prompt repairs and regular checks.", 
         icon: CheckIcon, 
-        image: "/images/soil_drainage.png",
-        link: "/services/soil-drainage"
+        image: "/images/hero.jpg",
+        link: "#contact"
     },
     { 
-        title: "Drought Tolerant Design", 
-        description: "Water-wise landscape design using native Melaleuca and Acacia species. Beautiful, low-maintenance gardens that thrive in Pakenham's dry summers.", 
+        title: "Pre-Sale & Rental Prep", 
+        description: "Maximise your property value. We fix the small things that buyers notice: painting touch-ups, garden tidying, and pressure washing.", 
         icon: LeafIcon,
-        image: "/images/drought_design.png",
-        link: "/services/drought-tolerant-design"
+        image: "/images/hero.jpg",
+        link: "#contact"
     }
 ];
 
-const locations = ["Pakenham", "Officer", "Berwick", "Clyde North", "Narre Warren", "Beaconsfield", "Emerald"];
+const locations = ["Cowes", "San Remo", "Ventnor", "Surf Beach", "Smiths Beach", "Sunderland Bay", "Newhaven", "Cape Woolamai"];
 
 const schema = JSON.stringify({
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "LandscapingBusiness",
-      "name": "Pakenham Landscapers",
-      "image": "https://landscaperspakenham.com.au/images/hero.png",
-      "@id": "https://landscaperspakenham.com.au/#organization",
-      "url": "https://landscaperspakenham.com.au",
-      "telephone": "+61400000000",
+      "@type": "HomeAndConstructionBusiness",
+      "name": "Mr Home Assist",
+      "image": "https://mrhomeassist.com.au/images/hero.jpg",
+      "@id": "https://mrhomeassist.com.au/#organization",
+      "url": "https://mrhomeassist.com.au",
+      "telephone": "+6156789012",
       "priceRange": "$$",
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Pakenham",
+        "addressLocality": "Cowes",
         "addressRegion": "VIC",
-        "postalCode": "3810",
+        "postalCode": "3922",
         "addressCountry": "AU"
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": -38.0712,
-        "longitude": 145.4878
+        "latitude": -38.4511,
+        "longitude": 145.2419
       },
       "areaServed": {
         "@type": "GeoCircle",
         "geoMidpoint": {
           "@type": "GeoCoordinates",
-          "latitude": -38.0712,
-          "longitude": 145.4878
+          "latitude": -38.4511,
+          "longitude": 145.2419
         },
-        "geoRadius": "20000"
+        "geoRadius": "15000"
       }
     },
     {
@@ -82,34 +79,34 @@ const schema = JSON.stringify({
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "Do I need a planning permit for a retaining wall in Pakenham?",
+          "name": "Do you sharpen tools?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "In the Cardinia and Casey Shire council areas, any retaining wall over 1 meter in height requires a building permit. Additionally, if the wall is within 1 meter of a title boundary or easement, engineering is typically required regardless of height."
+            "text": "No, we do not offer tool sharpening services. We focus on property maintenance, repairs, and building upkeep."
           }
         },
         {
           "@type": "Question",
-          "name": "How much does landscaping cost in Pakenham?",
+          "name": "Do you service holiday homes?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Cost varies by scope, but a typical new estate front yard including driveway concreting, soil remediation, and planting ranges from $15k to $25k. Full blocked sloping sites requiring structural retaining walls can range from $30k to $80k+."
+            "text": "Yes, we specialize in maintaining Airbnb and holiday rentals on Phillip Island, ensuring prompt repairs for guests."
           }
         },
         {
-            "@type": "Question",
-            "name": "What is the best time of year to landscape?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "While we work year-round, Autumn (March-May) is ideal for planting as the soil is still warm but the fierce summer heat has passed. For structural work like paving and retaining walls, we prefer the drier months to minimize mud tracking."
-            }
+          "@type": "Question",
+          "name": "What areas do you cover?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We cover the entire Phillip Island region including Cowes, Ventnor, Surf Beach, and San Remo."
+          }
         },
         {
           "@type": "Question",
-          "name": "My backyard floods when it rains. Can you fix it?",
+          "name": "Are you insured?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. We solve this by installing agricultural drains (Ag-Pipe) connected to your stormwater system and using gypsum to break down the reactive clay structure."
+            "text": "Yes, Mr Home Assist is fully insured for all handyman and maintenance work, giving you peace of mind."
           }
         }
       ]
@@ -118,36 +115,33 @@ const schema = JSON.stringify({
 });
 ---
 
-<Layout title="Pakenham Landscapers | Retaining Walls, Paving & Design" description="Local Pakenham landscaping specialists. Family owned, fully insured. Expert retaining walls, paving, and indigenous planting for Casey Shire homes." schema={schema}>
-
+<Layout title="Mr Home Assist | Handyman Phillip Island & San Remo" description="Reliable handyman & building maintenance for Phillip Island. Decks, repairs, and holiday home maintenance. Call 56 789 012." schema={schema}>
 
     <!-- Background Texture -->
     <div class="fixed inset-0 pointer-events-none opacity-[0.4] z-[100] bg-[url('https://www.transparenttextures.com/patterns/concrete-wall.png')] mix-blend-multiply"></div>
 
     <main class="flex min-h-screen flex-col items-center font-sans text-slate-800 bg-slate-50 selection:bg-emerald-500 selection:text-white">
         
-
-
         {/* Hero Section */}
         <section class="relative w-full pt-40 pb-20 lg:pt-60 lg:pb-40 px-6 overflow-hidden">
             <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
                 <div class="relative z-10">
                     <div class="inline-flex items-center gap-2 px-4 py-2 bg-emerald-50 text-emerald-700 rounded-full text-xs font-bold uppercase tracking-wider mb-8 border border-emerald-100">
-                        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Serving Casey Shire
+                        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Serving Phillip Island & Bass Coast
                     </div>
                     <h1 class="text-5xl lg:text-7xl font-extrabold text-slate-900 leading-[1.1] mb-8 tracking-tight">
-                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-teal-500">Pakenham Landscapers</span> <br />
-                        Transforming Gardens.
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-teal-500">Mr Home Assist</span> <br />
+                        Your Local Handyman.
                     </h1>
                     <p class="text-slate-600 text-lg lg:text-xl mb-10 max-w-lg leading-relaxed">
-                        From <strong class="text-emerald-700">structural retaining walls</strong> to drought-tolerant <strong class="text-emerald-700">indigenous planting</strong>. We understand Pakenham's clay soil and strict council guidelines.
+                        Reliable <strong class="text-emerald-700">Property Maintenance</strong> and <strong class="text-emerald-700">Repairs</strong>. From deck rejuvenation to holiday home upkeep, we turn up on time, every time.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="#quote" class="px-8 py-4 bg-slate-900 text-white rounded-xl font-bold text-lg hover:bg-emerald-600 transition-colors shadow-xl flex items-center justify-center gap-2">
+                        <a href="mailto:info@mrhomeassist.com.au" class="px-8 py-4 bg-slate-900 text-white rounded-xl font-bold text-lg hover:bg-emerald-600 transition-colors shadow-xl flex items-center justify-center gap-2">
                             Request Quote
                         </a>
                         <div class="px-8 py-4 bg-white border border-slate-200 text-slate-600 rounded-xl font-medium flex items-center justify-center gap-2 shadow-sm">
-                            <div class="w-5 h-5 text-emerald-500" set:html={CheckIcon} /> Fully Insured
+                            <div class="w-5 h-5 text-emerald-500" set:html={CheckIcon} /> 25+ Years Exp
                         </div>
                     </div>
                 </div>
@@ -155,12 +149,12 @@ const schema = JSON.stringify({
                 <div class="relative">
                     <div class="absolute -inset-4 bg-emerald-500/10 rounded-[40px] rotate-3 blur-2xl"></div>
                     <div class="relative rounded-[32px] overflow-hidden shadow-2xl border-4 border-white aspect-[4/3]">
-                        <img src="/images/hero.png" alt="Modern Pakenham Landscape Design" class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700" />
+                        <img src="/images/hero.jpg" alt="Phillip Island Decking and Handyman" class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700" />
                         
                         {/* Guarantee Badge */}
                         <div class="absolute bottom-6 left-6 bg-white/95 backdrop-blur p-6 rounded-2xl shadow-xl border border-emerald-100 max-w-xs">
                             <div class="text-emerald-600 font-black text-sm uppercase tracking-wider mb-1">Our Promise</div>
-                            <div class="font-bold text-slate-900 text-lg leading-tight">"Not Right? We Fix it in 24hrs or You Don't Pay."</div>
+                            <div class="font-bold text-slate-900 text-lg leading-tight">"On Time. Upfront Pricing. Quality Work."</div>
                         </div>
                     </div>
                 </div>
@@ -174,8 +168,8 @@ const schema = JSON.stringify({
         <section id="services" class="w-full py-32 bg-white relative">
             <div class="max-w-7xl mx-auto px-6">
                 <div class="text-center mb-24">
-                    <h2 class="text-3xl lg:text-5xl font-bold text-slate-900 mb-6">Expert Landscape Gardeners Pakenham</h2>
-                    <p class="text-slate-500 text-lg max-w-2xl mx-auto">Specializing in new estate builds (Maple Grove, Pakenham East) and established property renovations.</p>
+                    <h2 class="text-3xl lg:text-5xl font-bold text-slate-900 mb-6">Complete Home Maintenance</h2>
+                    <p class="text-slate-500 text-lg max-w-2xl mx-auto">Specializing in coastal property care, deck repairs, and general handyman services for homeowners and real estate managers.</p>
                 </div>
 
                 <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -191,7 +185,7 @@ const schema = JSON.stringify({
                                 </div>
                                 <h3 class="text-xl font-bold text-slate-900 mb-4 pr-12">{s.title}</h3>
                                 <p class="text-slate-500 leading-relaxed text-sm mb-6">{s.description}</p>
-                                <div class="text-emerald-600 font-bold text-xs uppercase tracking-widest group-hover:translate-x-2 transition-transform">Learn More →</div>
+                                <div class="text-emerald-600 font-bold text-xs uppercase tracking-widest group-hover:translate-x-2 transition-transform">Get Quote →</div>
                             </div>
                         </a>
                     ))}
@@ -204,22 +198,22 @@ const schema = JSON.stringify({
             <div class="max-w-4xl mx-auto">
                 <div class="mb-16">
                      <span class="text-emerald-500 font-bold tracking-widest uppercase text-xs">Technical Specifications</span>
-                     <h2 class="text-4xl lg:text-5xl font-bold text-white mt-4 mb-8">Building in Pakenham?</h2>
-                     <p class="text-lg text-slate-400">We build to the specific conditions of the Cardinia and Casey region.</p>
+                     <h2 class="text-4xl lg:text-5xl font-bold text-white mt-4 mb-8">Building on the Coast?</h2>
+                     <p class="text-lg text-slate-400">We understand the specific challenges of maintaining property in the Bass Coast's salt-air environment.</p>
                 </div>
 
                 <div class="grid gap-6 mb-24">
                     <div class="bg-slate-800/50 p-8 rounded-2xl border border-slate-700 hover:border-emerald-500/50 transition-colors">
-                        <h4 class="text-white font-bold text-lg mb-2">Soil Management (Reactive Clay)</h4>
-                        <p class="text-sm leading-relaxed">Pakenham is known for its reactive clay soils (Kurosol). We always use a 100mm compacted crushed rock base for paving and proper agricultural drainage coils behind all retaining walls to prevent heave and cracking.</p>
+                        <h4 class="text-white font-bold text-lg mb-2">Salt & Corrosion Protection</h4>
+                        <p class="text-sm leading-relaxed">Phillip Island's salt spray is highly corrosive. We use <strong>316 Marine Grade Stainless Steel</strong> fixtures for all decking and outdoor repairs to prevent rust and ensure longevity, unlike standard galvanised fixings.</p>
                     </div>
                     <div class="bg-slate-800/50 p-8 rounded-2xl border border-slate-700 hover:border-emerald-500/50 transition-colors">
-                        <h4 class="text-white font-bold text-lg mb-2">Council Regulations (Casey Shire)</h4>
-                        <p class="text-sm leading-relaxed">For nature strips, we adhere to the 1200mm pedestrian clearance rule. For retaining walls, any structure over 1m high, or within 1m of an easement, will be engineered and permitted through our building surveyor partners.</p>
+                        <h4 class="text-white font-bold text-lg mb-2">Timber Decking Care</h4>
+                        <p class="text-sm leading-relaxed">Coastal sun and wind strip timber quickly. We recommend and use deep-penetrating oils (like Cutek) rather than surface coatings that peel. This allows the timber to breathe and withstand the expansion/contraction of our variable climate.</p>
                     </div>
                      <div class="bg-slate-800/50 p-8 rounded-2xl border border-slate-700 hover:border-emerald-500/50 transition-colors">
-                        <h4 class="text-white font-bold text-lg mb-2">Indigenous Vegetation</h4>
-                        <p class="text-sm leading-relaxed">We prioritize local species like <em>Acacia suaveolens</em> and deep-rooted Eucalypts that thrive in our specific micro-climate, reducing water usage and supporting local biodiversity.</p>
+                        <h4 class="text-white font-bold text-lg mb-2">Holiday Rental Standards</h4>
+                        <p class="text-sm leading-relaxed">For AirBNB and holiday home owners, we provide proactive maintenance checks. We ensure decks are safe, handrails are secure, and properties are compliant with safety standards for guest peace of mind.</p>
                     </div>
                 </div>
 
@@ -228,20 +222,20 @@ const schema = JSON.stringify({
                     <h3 class="text-3xl font-bold text-white mb-12">Common Questions</h3>
                     <div class="space-y-8">
                         <div>
-                            <h4 class="text-xl font-bold text-emerald-400 mb-2">Do I need a planning permit for a retaining wall in Pakenham?</h4>
-                            <p class="leading-relaxed">In the Cardinia and Casey Shire council areas, any retaining wall <strong>over 1 meter in height</strong> requires a building permit. Additionally, if the wall is within 1 meter of a title boundary or easement, engineering is typically required regardless of height. We handle all engineering and surveyor approvals as part of our package.</p>
+                            <h4 class="text-xl font-bold text-emerald-400 mb-2">Where do you service?</h4>
+                            <p class="leading-relaxed">We service the entire Phillip Island area (Cowes, Ventnor, Rhyll, Smiths Beach, Sunderland Bay, Surf Beach, Cape Woolamai, Newhaven) and San Remo.</p>
                         </div>
                         <div>
-                            <h4 class="text-xl font-bold text-emerald-400 mb-2">How much does landscaping cost in Pakenham?</h4>
-                            <p class="leading-relaxed">Cost varies by scope, but a typical new estate front yard (e.g., in Maple Grove or Pakenham East) including driveway concreting, soil remediation, and planting ranges from $15k to $25k. Full blocked sloping sites requiring structural retaining walls can range from $30k to $80k+ depending on access and engineering requirements.</p>
+                            <h4 class="text-xl font-bold text-emerald-400 mb-2">Do you charge for quotes?</h4>
+                            <p class="leading-relaxed">No. We provide free, upfront quotes for all jobs. We believe in transparency so you know exactly what the job will cost before we start.</p>
                         </div>
                         <div>
-                            <h4 class="text-xl font-bold text-emerald-400 mb-2">What is the best time of year to landscape?</h4>
-                            <p class="leading-relaxed">While we work year-round, Autumn (March-May) is ideal for planting as the soil is still warm but the fierce summer heat has passed, allowing roots to establish. For structural work like paving and retaining walls, we prefer the drier months to minimize mud tracking and spoil issues on your site.</p>
+                            <h4 class="text-xl font-bold text-emerald-400 mb-2">Can you fix my rotting deck?</h4>
+                            <p class="leading-relaxed">Yes. Deck repairs are a specialty. We can assess if the sub-structure is sound and simply replace the decking boards, or if structural repairs are needed. We try to save the deck where possible to save you money.</p>
                         </div>
                         <div>
-                            <h4 class="text-xl font-bold text-emerald-400 mb-2">My backyard floods when it rains. Can you fix it?</h4>
-                            <p class="leading-relaxed">Yes. This is the #1 issue in Pakenham due to the heavy clay subsoils. We solve this by installing <strong>agricultural drains</strong> (Ag-Pipe) connected to your stormwater system and using gypsum to break down the clay structure. We don't just "top dress" the mud; we fix the drainage architecture underneath.</p>
+                            <h4 class="text-xl font-bold text-emerald-400 mb-2">Do you do small jobs?</h4>
+                            <p class="leading-relaxed">Absolutely. From fixing a sticking door, hanging a picture, or patching a hole in the plaster, no job is too small. That's what a good handyman is for!</p>
                         </div>
                     </div>
                 </div>
@@ -252,18 +246,12 @@ const schema = JSON.stringify({
         <div class="w-full py-12 bg-emerald-600 overflow-hidden relative">
             <div class="flex gap-16 whitespace-nowrap animate-marquee opacity-80">
                 {[...locations, ...locations, ...locations].map(loc => (
-                    loc === "Officer" ? 
-                    <a href="/locations/landscaping-officer" class="text-emerald-100 font-bold text-2xl uppercase tracking-widest flex items-center gap-8 hover:text-white transition-colors">
-                        {loc} <div class="w-2 h-2 bg-emerald-900/30 rounded-full"></div>
-                    </a> :
                     <span class="text-emerald-100 font-bold text-2xl uppercase tracking-widest flex items-center gap-8">
                         {loc} <div class="w-2 h-2 bg-emerald-900/30 rounded-full"></div>
                     </span>
                 ))}
             </div>
         </div>
-
-
 
     </main>
 
@@ -277,4 +265,3 @@ const schema = JSON.stringify({
         }
     </style>
 </Layout>
-

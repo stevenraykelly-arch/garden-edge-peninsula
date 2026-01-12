@@ -1,0 +1,77 @@
+{
+    "competitors": [
+        {
+            "name": "Fix Anything Build Anything",
+            "url": "https://homefixphillipisland.com.au",
+            "services": [
+                "Renovations",
+                "General Repairs"
+            ],
+            "pros": "Established 2008, Trusted",
+            "cons": "Generic branding"
+        },
+        {
+            "name": "1 Call We Fix All",
+            "url": "https://www.yellowpages.com.au/vic/cowes/1-call-we-fix-all-15340058-listing.html",
+            "services": [
+                "Property Maintenance",
+                "Bass Coast Coverage"
+            ],
+            "pros": "Wide coverage",
+            "cons": "No dedicated website found (YP listing)"
+        },
+        {
+            "name": "Monki's Maintenance",
+            "url": "https://www.yellowpages.com.au/vic/surf-beach/monkis-maintenance-1000001552885-listing.html",
+            "services": [
+                "Home Maintenance",
+                "Surf Beach area"
+            ],
+            "pros": "Local specialist",
+            "cons": "Limited digital presence"
+        }
+    ],
+    "common_services": [
+        "Deck Repairs",
+        "Painting",
+        "General Maintenance",
+        "Tiling",
+        "Carpentry"
+    ],
+    "niche_services": [
+        "Salt Corrosion Treatment",
+        "Holiday Home Maintenance",
+        "Deck Rejuvenation"
+    ],
+    "visual_style": {
+        "colors": [
+            "#0C4A6E",
+            "#F97316"
+        ],
+        "imagery": "Coastal residential, weathered timber vs restored timber, ocean views, modern tools"
+    },
+    "geo_keywords": [
+        "Phillip Island",
+        "Cowes",
+        "San Remo",
+        "Bass Coast",
+        "Surf Beach"
+    ],
+    "local_context": {
+        "problems": [
+            "Salt spray corrosion",
+            "UV damage to timber",
+            "High humidity mold"
+        ],
+        "regulations": "Bass Coast Shire planning schemes for overlays",
+        "entities": [
+            "Western Port Bay",
+            "Bass Strait",
+            "The Nobbies"
+        ]
+    },
+    "visual_strategy": {
+        "hero_concept": "High-end timber deck needing maintenance vs restored section, with ocean glimpse",
+        "aesthetic": "Coastal Industrial, rugged but premium"
+    }
+}
