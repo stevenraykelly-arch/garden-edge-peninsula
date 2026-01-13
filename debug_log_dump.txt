@@ -1,4 +1,9 @@
 Starting deployment of stevenraykelly-arch/mr-home-assist:main to DO-Trade-Factory-01.
 Preparing container with helper image: ghcr.io/coollabsio/coolify-helper:1.0.12
-Error response from daemon: No such container: lskwc0sgw8sowc4404k40gsg
-169fe922b18fb40febaa83b0544b762261e99b3517b8430a97b066f421e276c1
+Error response from daemon: No such container: mc0kc0oo000kw8w8gswwk0gk
+b26867db6ddc226d113b45d28d0e0044607ca5a7313fc993a0b47320dc2a8c7e
+3a42db0cc79dc8dca14eed8c70cbdd4defcc54ec	refs/heads/main
+Image not found (bokk8sowsccckgssoo4s80go:3a42db0cc79dc8dca14eed8c70cbdd4defcc54ec). Building new image.
+----------------------------------------
+Importing stevenraykelly-arch/mr-home-assist:main (commit sha 3a42db0cc79dc8dca14eed8c70cbdd4defcc54ec) to /artifacts/mc0kc0oo000kw8w8gswwk0gk.
+Cloning into '/artifacts/mc0kc0oo000kw8w8gswwk0gk'...

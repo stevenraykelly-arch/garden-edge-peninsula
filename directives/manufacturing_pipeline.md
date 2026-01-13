@@ -61,6 +61,16 @@ Autonomous "Factory" for high-end trade sites using Astro (Static HTML) for maxi
 2.  **Build**: Run `npm run build` to verify the static output.
 3.  **Infrastructure**: Deploy using the factory's automated scripts to Coolify.
 
+### Phase 8: Post-Manufacturing Audit (MANDATORY)
+1.  **Run Audit**: Execute `python execution/factory_audit.py` to verify strict compliance.
+    - **Silo Check**: Ensures >3 service pages exist (No Single-Page Sites).
+    - **Asset Check**: Verifies 5+ unique assets exist (No Repetition).
+    - **H1 Check**: Verifies H1 tags contain "[Service] + [Location]".
+    - **Schema Check**: Confirms JSON-LD implementation.
+    - **Sitemap Check**: Confirms `sitemap()` integration is active.
+    - **Trust Check**: Confirms presence of "Licensed/Insured" signals.
+2.  **Hard Stop**: If Audit Fails, DO NOT hand over to client. Rectify immediately.
+
 ## 5. COOLIFY DEPLOYMENT PROTOCOL
 *   **Standard:** Deploy to staging (e.g., `[project].coolify.app`).
 *   **Custom Domain (When Requested):**
