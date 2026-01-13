@@ -140,6 +140,27 @@ def check_trust_signals():
         print(f"FAIL: Could not read index.astro: {e}")
         return False
 
+def check_locations():
+    print("\n[AUDIT] Checking Location Infrastructure...")
+    # Checking for dynamic location page or explicit static pages
+    locations_dir = os.path.join(PAGES_DIR, "locations")
+    if not os.path.exists(locations_dir):
+        print("FAIL: 'locations' directory missing.")
+        return False
+    
+    # Check for [location].astro OR multiple .astro files
+    files = os.listdir(locations_dir)
+    if "[location].astro" in files:
+         print("PASS: Dynamic Location Silo '[location].astro' found.")
+         return True
+    
+    if len([f for f in files if f.endswith(".astro")]) >= 3:
+         print(f"PASS: {len(files)} Static Location pages found.")
+         return True
+         
+    print(f"FAIL: Insufficient location pages found in {locations_dir}")
+    return False
+
 def main():
     print("=== MANUFACTURING DIRECTIVE COMPLIANCE AUDIT (EXPANDED) ===")
     print(f"Target Project: {os.path.basename(PROJECT_ROOT)}")
@@ -150,7 +171,9 @@ def main():
         check_h1_compliance(),
         check_schema(),
         check_sitemap_config(),
-        check_trust_signals()
+        check_sitemap_config(),
+        check_trust_signals(),
+        check_locations()
     ]
     
     print("\n================================================")

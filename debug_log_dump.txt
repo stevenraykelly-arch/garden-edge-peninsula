@@ -1,9 +1,9 @@
 Starting deployment of stevenraykelly-arch/mr-home-assist:main to DO-Trade-Factory-01.
 Preparing container with helper image: ghcr.io/coollabsio/coolify-helper:1.0.12
-Error response from daemon: No such container: mc0kc0oo000kw8w8gswwk0gk
-b26867db6ddc226d113b45d28d0e0044607ca5a7313fc993a0b47320dc2a8c7e
-3a42db0cc79dc8dca14eed8c70cbdd4defcc54ec	refs/heads/main
-Image not found (bokk8sowsccckgssoo4s80go:3a42db0cc79dc8dca14eed8c70cbdd4defcc54ec). Building new image.
+Error response from daemon: No such container: lw0ccc8o8408sc4c4gsg04ws
+6941c00a7924fcb002585a2b747b7b57b6db35465678ea71e0f08143be61c397
+860266a1df842c420bd29e95934f1bb8d9874c82	refs/heads/main
+Image not found (bokk8sowsccckgssoo4s80go:860266a1df842c420bd29e95934f1bb8d9874c82). Building new image.
 ----------------------------------------
-Importing stevenraykelly-arch/mr-home-assist:main (commit sha 3a42db0cc79dc8dca14eed8c70cbdd4defcc54ec) to /artifacts/mc0kc0oo000kw8w8gswwk0gk.
-Cloning into '/artifacts/mc0kc0oo000kw8w8gswwk0gk'...
+Importing stevenraykelly-arch/mr-home-assist:main (commit sha 860266a1df842c420bd29e95934f1bb8d9874c82) to /artifacts/lw0ccc8o8408sc4c4gsg04ws.
+Cloning into '/artifacts/lw0ccc8o8408sc4c4gsg04ws'...

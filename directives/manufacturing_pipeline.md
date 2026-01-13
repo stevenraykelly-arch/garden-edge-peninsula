@@ -64,6 +64,7 @@ Autonomous "Factory" for high-end trade sites using Astro (Static HTML) for maxi
 ### Phase 8: Post-Manufacturing Audit (MANDATORY)
 1.  **Run Audit**: Execute `python execution/factory_audit.py` to verify strict compliance.
     - **Silo Check**: Ensures >3 service pages exist (No Single-Page Sites).
+    - **Location Check**: Ensures location infrastructure (dynamic or static) exists.
     - **Asset Check**: Verifies 5+ unique assets exist (No Repetition).
     - **H1 Check**: Verifies H1 tags contain "[Service] + [Location]".
     - **Schema Check**: Confirms JSON-LD implementation.
