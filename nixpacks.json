@@ -10,7 +10,7 @@
         },
         "install": {
             "cmds": [
-                "npm ci --omit=dev"
+                "npm install"
             ]
         },
         "build": {
