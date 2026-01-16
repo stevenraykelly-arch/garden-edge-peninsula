@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://landscaperspakenham.com.au/sitemap.xml
+Sitemap: https://gardenedge.com.au/sitemap-index.xml
