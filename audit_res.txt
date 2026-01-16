@@ -1,0 +1,29 @@
+=== MANUFACTURING DIRECTIVE COMPLIANCE AUDIT (EXPANDED) ===
+Target Project: Website-builder-antigravity-at-scale
+
+[AUDIT] Checking Service Silos (Single-Page Ban Violation Check)...
+PASS: 4 Service Silos detected (custom-curved-edging.astro, garden-design-consult.astro, supply-and-install.astro, supply-only.astro)
+
+[AUDIT] Checking Asset Uniqueness (Zero Repetition Mandate)...
+PASS: All critical unique assets verified present.
+
+[AUDIT] Checking H1 Tags for 'Service + Location' Standard...
+PASS: All 5 pages have compliant H1 tags containing 'Mornington'.
+
+[AUDIT] Checking SEO Schema Implementation...
+PASS: Schema detected in all checked pages.
+
+[AUDIT] Checking Sitemap Configuration (Directive Phase 6)...
+FAIL: Sitemap integration is commented out.
+
+[AUDIT] Checking Sitemap Configuration (Directive Phase 6)...
+FAIL: Sitemap integration is commented out.
+
+[AUDIT] Checking Trust Signals (Directive Phase 5)...
+PASS: Trust signals ('insured', 'guarantee', etc.) found on Homepage.
+
+[AUDIT] Checking Location Infrastructure...
+PASS: Dynamic Location Silo '[location].astro' found.
+
+================================================
+RESULT: FAILURE - DIRECTIVE VIOLATIONS DETECTED

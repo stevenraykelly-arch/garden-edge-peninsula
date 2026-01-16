@@ -18,8 +18,10 @@ try:
     if resp.status_code == 200:
         data = resp.json()
         if isinstance(data, dict) and 'deployments' in data:
-                print(f"Latest Deployment Object: {d}")
-                uuid = d.get('uuid') or d.get('id') # Fallback
+            if len(data['deployments']) > 0:
+                d = data['deployments'][0]
+                print(f"Latest Deployment Object: {d.keys()}")
+                uuid = d.get('uuid') or d.get('id')
                 status = d.get('status')
         elif isinstance(data, list):
              if len(data) > 0:

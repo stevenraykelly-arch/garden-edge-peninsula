@@ -1,0 +1,42 @@
+
+> mr-home-assist@0.1.0 build
+> astro build
+
+04:23:10 [types] Generated 126ms
+04:23:10 [build] output: "static"
+04:23:10 [build] directory: C:\Users\srkel\Downloads\Website-builder-antigravity-at-scale\dist\
+04:23:10 [build] Collecting build info...
+04:23:10 [build] Γ£ô Completed in 262ms.
+04:23:10 [build] Building static entrypoints...
+04:23:12 [vite] [32mΓ£ô built in 1.80s[39m
+04:23:12 [build] Γ£ô Completed in 1.85s.
+
+ generating static routes 
+04:23:12 Γû╢ src/pages/locations/[location].astro
+04:23:12   Γö£ΓöÇ /locations/cowes/index.html (+13ms)
+04:23:12   Γö£ΓöÇ /locations/san-remo/index.html (+5ms)
+04:23:12   Γö£ΓöÇ /locations/ventnor/index.html (+4ms)
+04:23:12   Γö£ΓöÇ /locations/newhaven/index.html (+3ms)
+04:23:12   ΓööΓöÇ /locations/smiths-beach/index.html (+3ms)
+04:23:12 Γû╢ src/pages/privacy-policy.astro
+04:23:12   ΓööΓöÇ /privacy-policy/index.html (+3ms)
+04:23:12 Γû╢ src/pages/services/deck-repairs.astro
+04:23:12   ΓööΓöÇ /services/deck-repairs/index.html (+4ms)
+04:23:12 Γû╢ src/pages/services/handyman-repairs.astro
+04:23:12   ΓööΓöÇ /services/handyman-repairs/index.html (+3ms)
+04:23:12 Γû╢ src/pages/services/holiday-home-maintenance.astro
+04:23:12   ΓööΓöÇ /services/holiday-home-maintenance/index.html (+5ms)
+04:23:12 Γû╢ src/pages/services/pre-sale-prep.astro
+04:23:12   ΓööΓöÇ /services/pre-sale-prep/index.html (+3ms)
+04:23:12 Γû╢ src/pages/index.astro
+04:23:12   ΓööΓöÇ /index.html (+4ms)
+04:23:12 Γ£ô Completed in 80ms.
+
+Cannot read properties of undefined (reading 'reduce')
+  Location:
+    C:\Users\srkel\Downloads\Website-builder-antigravity-at-scale\node_modules\@astrojs\sitemap\dist\index.js:60:37
+  Stack trace:
+    at astro:build:done (file:///C:/Users/srkel/Downloads/Website-builder-antigravity-at-scale/node_modules/@astrojs/sitemap/dist/index.js:60:37)
+    at async AstroBuilder.build (file:///C:/Users/srkel/Downloads/Website-builder-antigravity-at-scale/node_modules/astro/dist/core/build/index.js:159:5)
+    at async build (file:///C:/Users/srkel/Downloads/Website-builder-antigravity-at-scale/node_modules/astro/dist/core/build/index.js:51:3)
+    at async runCommand (file:///C:/Users/srkel/Downloads/Website-builder-antigravity-at-scale/node_modules/astro/dist/cli/index.js:147:7)

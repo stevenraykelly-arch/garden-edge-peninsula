@@ -11,7 +11,7 @@ PAGES_DIR = os.path.join(SRC_DIR, "pages")
 IMAGES_DIR = os.path.join(PROJECT_ROOT, "public/images")
 DIRECTIVE_FILE = os.path.join(PROJECT_ROOT, "directives/manufacturing_pipeline.md")
 
-REQUIRED_LOCATION = "Phillip Island" # This should ideally be dynamic, but hardcoded for this specific build verification.
+REQUIRED_LOCATION = "Mornington" # Updated for Garden Edge
 
 def check_silos():
     print("\n[AUDIT] Checking Service Silos (Single-Page Ban Violation Check)...")
@@ -30,7 +30,7 @@ def check_silos():
 
 def check_assets():
     print("\n[AUDIT] Checking Asset Uniqueness (Zero Repetition Mandate)...")
-    expected_assets = ['hero.webp', 'decks.webp', 'handyman.webp', 'rental.webp', 'presale.webp']
+    expected_assets = ['hero.webp', 'supply_only.webp', 'install.webp', 'curved.webp']
     missing = []
     
     for asset in expected_assets:

@@ -1,0 +1,79 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const schema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Product",
+      "name": "Corten Steel Garden Edging Supply",
+      "image": "https://gardenedge.com.au/images/supply_only.webp",
+      "description": "Premium 1.6mm, 2.0mm and 3.0mm Corten steel edging strips and rings. Australian BlueScope steel.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Garden Edge"
+      },
+      "sku": "CORTEN-SUPPLY",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "AUD",
+        "price": "25.00",
+        "priceValidUntil": "2025-12-31",
+        "availability": "https://schema.org/InStock"
+      }
+    }
+  ]
+});
+---
+
+<Layout title="Supply Only Corten Steel Edging | DIY Garden Edge" description="Buy Corten steel garden edging direct. We supply straight lengths, rings, and pegs for DIY installation across the Mornington Peninsula. High-quality Australian steel." schema={schema}>
+    <main class="font-sans text-slate-800 bg-slate-50 selection:bg-amber-500 selection:text-white pt-32 lg:pt-48 pb-20">
+        
+        <div class="max-w-4xl mx-auto px-6">
+            <h1 class="text-4xl lg:text-6xl font-extrabold text-slate-900 mb-8">Supply Only <span class="text-amber-700">Corten Steel Garden Edging</span> Mornington.</h1>
+            <p class="text-xl text-slate-600 mb-12 leading-relaxed">For the landscapers, builders, and serious DIY homeowners who want professional-grade materials without the retail markup.</p>
+            
+            <img src="/images/supply_only.webp" alt="Stacked Corten steel edging strips ready for delivery" class="w-full rounded-3xl shadow-2xl mb-16 border-4 border-white" />
+
+            <div class="prose prose-lg prose-slate max-w-none">
+                <h2>Why Choose Our Steel?</h2>
+                <p>Not all "rusty metal" is genuine Corten. Many cheap imports are simply mild steel that creates a flakey, destructive rust that eventually eats through the metal. <strong>Garden Edge</strong> supplies only genuine weathering steel (often referred to by the trademark Cor-Ten).</p>
+                <p>Our steel develops a stable, protective oxide layer that resists corrosion, ensuring your garden borders last for decades, not just seasons.</p>
+
+                <h3>Available Sizes & Specifications</h3>
+                <p>We stock a range of gauges and heights to suit every application, from decorative flower beds to structural retaining:</p>
+                <ul>
+                    <li><strong>Heights:</strong> 100mm, 150mm, 200mm, 300mm.</li>
+                    <li><strong>Gauges (Thickness):</strong> 1.6mm (Flexible), 2.0mm (Standard), 3.0mm (Heavy Duty).</li>
+                    <li><strong>Lengths:</strong> Standard 2400mm lengths for easy transport and handling.</li>
+                </ul>
+
+                <h3>The Complete DIY System</h3>
+                <p>We don't just sell the metal strips. We provide the complete installation system used by pros:</p>
+                <ul>
+                    <li><strong>Connector Plates:</strong> Pre-drilled joiners for seamless connections between lengths.</li>
+                    <li><strong>Heavy Duty Pegs:</strong> Twisted or ribbed steel pegs that lock the edging into heavy clay or sandy loam.</li>
+                    <li><strong>Corner Pieces:</strong> Prefabricated 90-degree internal and external corners for sharp, geometric designs.</li>
+                </ul>
+
+                <h2>Delivery to Mornington Peninsula</h2>
+                <p>We deliver weekly to all Mornington Peninsula suburbs including Portsea, Sorrento, Rye, Rosebud, Dromana, Mt Martha, and Mornington. Our truck is equipped to handle long lengths without bending or damage.</p>
+
+                <blockquote>
+                    <p>"The 1.6mm edging was flexible enough to create amazing curves around my gum trees, but strong enough to hold back the mulch. Delivered right to my driveway in Balnarring." - <strong>Sarah J., Homeowner</strong></p>
+                </blockquote>
+
+                <h3>Pricing & Ordering</h3>
+                <p>Because steel prices fluctuate, we update our trade price list weekly. Contact us below for a current quote on your specific linear meterage requirements.</p> 
+            </div>
+
+            <div class="mt-16 p-8 bg-amber-50 rounded-2xl border border-amber-100 items-center text-center">
+                <h3 class="text-2xl font-bold text-slate-900 mb-4">Ready to Order?</h3>
+                <p class="mb-8 text-slate-600">Send us your measurements or a rough sketch, and we'll calculate exactly what you need.</p>
+                <a href="mailto:info@gardenedge.com.au" class="inline-block px-8 py-4 bg-slate-900 text-white rounded-xl font-bold text-lg hover:bg-amber-700 transition-colors shadow-xl">
+                    Get a Supply Quote
+                </a>
+            </div>
+        </div>
+    </main>
+</Layout>

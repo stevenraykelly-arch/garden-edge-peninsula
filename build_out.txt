@@ -1,0 +1,20 @@
+
+> mr-home-assist@0.1.0 build
+> astro build
+
+04:32:35 [types] Generated 120ms
+04:32:35 [build] output: "static"
+04:32:35 [build] directory: C:\Users\srkel\Downloads\Website-builder-antigravity-at-scale\dist\
+04:32:35 [build] Collecting build info...
+04:32:35 [build] ✓ Completed in 211ms.
+04:32:35 [build] Building static entrypoints...
+04:32:36 [ERROR] [vite] [31mx[39m Build failed in 838ms
+The symbol "locations" has already been declared
+  Location:
+    C:/Users/srkel/Downloads/Website-builder-antigravity-at-scale/src/pages/index.astro:44:6
+  Stack trace:
+    at failureErrorWithLog (C:\Users\srkel\Downloads\Website-builder-antigravity-at-scale\node_modules\esbuild\lib\main.js:1472:15)
+    at responseCallbacks.<computed> (C:\Users\srkel\Downloads\Website-builder-antigravity-at-scale\node_modules\esbuild\lib\main.js:622:9)
+    at Socket.readFromStdout (C:\Users\srkel\Downloads\Website-builder-antigravity-at-scale\node_modules\esbuild\lib\main.js:600:7)
+    at addChunk (node:internal/streams/readable:561:12)
+    at Readable.push (node:internal/streams/readable:392:5)

@@ -1,0 +1,63 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const schema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "name": "Custom Curved Garden Edging",
+      "image": "https://gardenedge.com.au/images/curved.webp",
+      "description": "Onsite mechanical curving of Corten steel. Create organic flowing garden beds and paths.",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Garden Edge"
+      }
+    }
+  ]
+});
+---
+
+<Layout title="Curved Garden Edging | Corten Steel Curves" description="We specialize in onsite curving of Corten steel. Create organic, flowing lines for your garden in Mornington, Mt Eliza, and Portsea." schema={schema}>
+    <main class="font-sans text-slate-800 bg-slate-50 selection:bg-amber-500 selection:text-white pt-32 lg:pt-48 pb-20">
+        
+        <div class="max-w-4xl mx-auto px-6">
+            <h1 class="text-4xl lg:text-6xl font-extrabold text-slate-900 mb-8">Custom Curved <span class="text-amber-700">Corten Edge</span> Mornington.</h1>
+            <p class="text-xl text-slate-600 mb-12 leading-relaxed">Nature rarely moves in straight lines. Our onsite curving service brings organic flow to your landscape design.</p>
+            
+            <img src="/images/curved.webp" alt="Serpentine curved Corten steel path" class="w-full rounded-3xl shadow-2xl mb-16 border-4 border-white" />
+
+            <div class="prose prose-lg prose-slate max-w-none">
+                <h2>The Art of the Curve</h2>
+                <p>Creating a smooth, flowing curve in steel requires more than just brute force. It requires mechanical rollers and a keen eye for geometry. Many inexperienced installers leave "kinks" or flat spots in the curve, ruining the effect.</p>
+                
+                <h3>No Pre-Fabricated Rings</h3>
+                <p>While we sell rings, our premium installation service involves <strong>continuous curving onsite</strong>. This means we can:</p>
+                <ul>
+                    <li>Follow the exact dripline of your existing trees.</li>
+                    <li>Create "kidney" shapes or serpentine paths that navigate through obstacles.</li>
+                    <li>Adjust the radius on the fly to suit the visual weight of the garden.</li>
+                </ul>
+
+                <h2>Ideal Use Cases</h2>
+                <p>Curved edging is particularly effective in:</p>
+                <ul>
+                    <li><strong>Coastal Gardens:</strong> Mimicking the rolling dunes and waves of the Bass Coast.</li>
+                    <li><strong>Bush Blocks:</strong> Softening the harsh lines of a house against a native gum backdrop.</li>
+                    <li><strong>Pathway Definition:</strong> Guiding the eye (and the visitor) towards a front door or garden feature.</li>
+                </ul>
+
+                <h3>Technical Precision</h3>
+                <p>We use 1.6mm or 2.0mm gauge steel for curves, as it offers the perfect balance of flexibility and strength. Once pegged, the tension in the steel holds the curve rigid, preventing it from warping over time.</p>
+            </div>
+            
+             <div class="mt-16 p-8 bg-white rounded-2xl border border-slate-200 shadow-xl items-center text-center">
+                <h3 class="text-2xl font-bold text-slate-900 mb-4">Design Your Flow</h3>
+                <p class="mb-8 text-slate-600">Want to see what's possible? We can spray mark potential curves on your grass to help you visualize the transformation.</p>
+                <a href="/services/garden-design-consult" class="inline-block px-8 py-4 bg-slate-900 text-white rounded-xl font-bold text-lg hover:bg-amber-700 transition-colors">
+                    Book a Design Consult
+                </a>
+            </div>
+        </div>
+    </main>
+</Layout>

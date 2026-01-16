@@ -1,0 +1,38 @@
+
+> mr-home-assist@0.1.0 build
+> astro build
+
+21:00:33 [types] Generated 124ms
+21:00:33 [build] output: "static"
+21:00:33 [build] directory: C:\Users\srkel\Downloads\Website-builder-antigravity-at-scale\dist\
+21:00:33 [build] Collecting build info...
+21:00:33 [build] Γ£ô Completed in 258ms.
+21:00:33 [build] Building static entrypoints...
+21:00:34 [vite] [32mΓ£ô built in 1.63s[39m
+21:00:34 [build] Γ£ô Completed in 1.67s.
+
+ generating static routes 
+21:00:35 Γû╢ src/pages/locations/[location].astro
+21:00:35   Γö£ΓöÇ /locations/mornington/index.html (+21ms)
+21:00:35   Γö£ΓöÇ /locations/mt-eliza/index.html (+4ms)
+21:00:35   Γö£ΓöÇ /locations/portsea/index.html (+3ms)
+21:00:35   Γö£ΓöÇ /locations/sorrento/index.html (+3ms)
+21:00:35   Γö£ΓöÇ /locations/rye/index.html (+4ms)
+21:00:35   Γö£ΓöÇ /locations/rosebud/index.html (+3ms)
+21:00:35   Γö£ΓöÇ /locations/dromana/index.html (+3ms)
+21:00:35   Γö£ΓöÇ /locations/balnarring/index.html (+3ms)
+21:00:35   ΓööΓöÇ /locations/flinders/index.html (+4ms)
+21:00:35 Γû╢ src/pages/privacy-policy.astro
+21:00:35   ΓööΓöÇ /privacy-policy/index.html (+3ms)
+21:00:35 Γû╢ src/pages/services/custom-curved-edging.astro
+21:00:35   ΓööΓöÇ /services/custom-curved-edging/index.html (+4ms)
+21:00:35 Γû╢ src/pages/services/garden-design-consult.astro
+21:00:35   ΓööΓöÇ /services/garden-design-consult/index.html (+4ms)
+21:00:35 Γû╢ src/pages/services/supply-and-install.astro
+21:00:35   ΓööΓöÇ /services/supply-and-install/index.html (+3ms)
+21:00:35 Γû╢ src/pages/services/supply-only.astro
+21:00:35   ΓööΓöÇ /services/supply-only/index.html (+14ms)
+21:00:35 Γû╢ src/pages/index.astro
+21:00:35   ΓööΓöÇ /index.html (+4ms)
+21:00:35 Γ£ô Completed in 138ms.
+

@@ -5,7 +5,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-    site: 'https://mrhomeassist.com.au',
+    site: 'https://gardenedge.com.au',
     integrations: [tailwind() /*, sitemap() */],
     server: {
         host: true
@@ -15,10 +15,10 @@ export default defineConfig({
     },
     vite: {
         server: {
-            allowedHosts: ['mrhomeassist.com.au', 'www.mrhomeassist.com.au', 'bokk8sowsccckgssoo4s80go.170.64.136.227.sslip.io']
+            allowedHosts: ['gardenedge.com.au', 'www.gardenedge.com.au', 'bokk8sowsccckgssoo4s80go.170.64.136.227.sslip.io']
         },
         preview: {
-            allowedHosts: ['mrhomeassist.com.au', 'www.mrhomeassist.com.au', 'bokk8sowsccckgssoo4s80go.170.64.136.227.sslip.io']
+            allowedHosts: ['gardenedge.com.au', 'www.gardenedge.com.au', 'bokk8sowsccckgssoo4s80go.170.64.136.227.sslip.io']
         }
     }
 });

@@ -1,0 +1,42 @@
+
+> mr-home-assist@0.1.0 build
+> astro build
+
+04:37:17 [types] Generated 143ms
+04:37:17 [build] output: "static"
+04:37:17 [build] directory: C:\Users\srkel\Downloads\Website-builder-antigravity-at-scale\dist\
+04:37:17 [build] Collecting build info...
+04:37:17 [build] ✓ Completed in 314ms.
+04:37:17 [build] Building static entrypoints...
+04:37:21 [vite] [32m✓ built in 3.49s[39m
+04:37:21 [build] ✓ Completed in 3.60s.
+
+ generating static routes 
+04:37:21 ▶ src/pages/locations/[location].astro
+04:37:21   ├─ /locations/cowes/index.html (+21ms)
+04:37:21   ├─ /locations/san-remo/index.html (+7ms)
+04:37:21   ├─ /locations/ventnor/index.html (+6ms)
+04:37:21   ├─ /locations/newhaven/index.html (+5ms)
+04:37:21   └─ /locations/smiths-beach/index.html (+6ms)
+04:37:21 ▶ src/pages/privacy-policy.astro
+04:37:21   └─ /privacy-policy/index.html (+5ms)
+04:37:21 ▶ src/pages/services/deck-repairs.astro
+04:37:21   └─ /services/deck-repairs/index.html (+8ms)
+04:37:21 ▶ src/pages/services/handyman-repairs.astro
+04:37:21   └─ /services/handyman-repairs/index.html (+5ms)
+04:37:21 ▶ src/pages/services/holiday-home-maintenance.astro
+04:37:21   └─ /services/holiday-home-maintenance/index.html (+7ms)
+04:37:21 ▶ src/pages/services/pre-sale-prep.astro
+04:37:21   └─ /services/pre-sale-prep/index.html (+5ms)
+04:37:21 ▶ src/pages/index.astro
+04:37:21   └─ /index.html (+6ms)
+04:37:21 ✓ Completed in 133ms.
+
+Cannot read properties of undefined (reading 'reduce')
+  Location:
+    C:\Users\srkel\Downloads\Website-builder-antigravity-at-scale\node_modules\@astrojs\sitemap\dist\index.js:60:37
+  Stack trace:
+    at astro:build:done (file:///C:/Users/srkel/Downloads/Website-builder-antigravity-at-scale/node_modules/@astrojs/sitemap/dist/index.js:60:37)
+    at async AstroBuilder.build (file:///C:/Users/srkel/Downloads/Website-builder-antigravity-at-scale/node_modules/astro/dist/core/build/index.js:159:5)
+    at async build (file:///C:/Users/srkel/Downloads/Website-builder-antigravity-at-scale/node_modules/astro/dist/core/build/index.js:51:3)
+    at async runCommand (file:///C:/Users/srkel/Downloads/Website-builder-antigravity-at-scale/node_modules/astro/dist/cli/index.js:147:7)

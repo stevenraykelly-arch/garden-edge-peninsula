@@ -12,68 +12,68 @@ const CheckIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24
 
 const services = [
     { 
-        title: "Deck Repairs & Rejuvenation", 
-        description: "Specialist deck restoration for coastal conditions. We replace rotted boards, re-screw loose fixings with stainless steel, and apply premium Cutek oils.", 
+        title: "Supply Only", 
+        description: "Premium Corten steel garden edging strips and rings. Available in various heights (100mm, 150mm) and lengths. Perfect for DIY projects.", 
         icon: SunIcon,
-        image: "/images/decks.webp", 
-        link: "/services/deck-repairs"
+        image: "/images/supply_only.webp", 
+        link: "/services/supply-only"
     },
     { 
-        title: "General Handyman Repairs", 
-        description: "The 'Fix-It' list expert. Door adjustments, plaster patching, flyscreen replacement, and general property upkeep for Phillip Island homes.", 
+        title: "Supply & Install", 
+        description: "Full service installation. We prepare the ground, shape the edging to your design, and install with commercial grade pegs for longevity.", 
         icon: WallIcon,
-        image: "/images/handyman.webp",
-        link: "/services/handyman-repairs"
+        image: "/images/install.webp",
+        link: "/services/supply-and-install"
     },
     { 
-        title: "Holiday Home Maintenance", 
-        description: "Reliable maintenance for Airbnb and holiday rentals. We ensure your property is guest-ready with prompt repairs and regular checks.", 
-        icon: CheckIcon, 
-        image: "/images/rental.webp",
-        link: "/services/holiday-home-maintenance"
+        title: "Custom Curved Edging", 
+        description: "Specialist onsite curving. We create flowing, organic lines that define your garden beds. No pre-formed rings, just perfect custom curves.", 
+        icon: LeafIcon, 
+        image: "/images/curved.webp",
+        link: "/services/custom-curved-edging"
     },
     { 
-        title: "Pre-Sale & Rental Prep", 
-        description: "Maximise your property value. We fix the small things that buyers notice: painting touch-ups, garden tidying, and pressure washing.", 
-        icon: LeafIcon,
-        image: "/images/presale.webp",
-        link: "/services/pre-sale-prep"
+        title: "Garden Design Consult", 
+        description: "Not sure where to start? We offer onsite consultations to measure up and design a Corten edging plan that suits your landscape.", 
+        icon: CheckIcon,
+        image: "/images/hero.webp",
+        link: "/services/garden-design-consult"
     }
 ];
 
-const locations = ["Cowes", "San Remo", "Ventnor", "Surf Beach", "Smiths Beach", "Sunderland Bay", "Newhaven", "Cape Woolamai"];
+const locations = ["Mornington", "Mt Eliza", "Portsea", "Sorrento", "Blairgowrie", "Rye", "Rosebud", "Dromana", "Balnarring", "Flinders"];
 
 const schema = JSON.stringify({
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "HomeAndConstructionBusiness",
-      "name": "Mr Home Assist",
-      "image": "https://mrhomeassist.com.au/images/hero.webp",
-      "@id": "https://mrhomeassist.com.au/#organization",
-      "url": "https://mrhomeassist.com.au",
-      "telephone": "+6156789012",
+      "@type": "GardenStore",
+      "name": "Garden Edge",
+      "image": "https://gardenedge.com.au/images/hero.webp",
+      "@id": "https://gardenedge.com.au/#organization",
+      "url": "https://gardenedge.com.au",
+      "email": "info@gardenedge.com.au",
       "priceRange": "$$",
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Cowes",
+        "addressLocality": "Mornington",
         "addressRegion": "VIC",
-        "postalCode": "3922",
+        "postalCode": "3931",
         "addressCountry": "AU"
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": -38.4511,
-        "longitude": 145.2419
+        "latitude": -38.2197,
+        "longitude": 145.0345
       },
       "areaServed": {
         "@type": "GeoCircle",
         "geoMidpoint": {
           "@type": "GeoCoordinates",
-          "latitude": -38.4511,
-          "longitude": 145.2419
+          "latitude": -38.2197,
+          "longitude": 145.0345
         },
-        "geoRadius": "15000"
+        "geoRadius": "40000"
       }
     },
     {
@@ -81,34 +81,34 @@ const schema = JSON.stringify({
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "Do you sharpen tools?",
+          "name": "Does Corten steel rust stain my paving?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "No, we do not offer tool sharpening services. We focus on property maintenance, repairs, and building upkeep."
+            "text": "During the initial weathering period (run-off phase), some rust staining can occur on porous surfaces. We recommend installing on a garden bed edge or using a pre-weathered sealant if adjacent to expensive stone."
           }
         },
         {
           "@type": "Question",
-          "name": "Do you service holiday homes?",
+          "name": "How long does Corten edging last?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, we specialize in maintaining Airbnb and holiday rentals on Phillip Island, ensuring prompt repairs for guests."
+            "text": "Corten steel is designed to last decades. The rust layer forms a protective barrier that slows down further corrosion, unlike standard mild steel which rusts through quickly."
           }
         },
         {
           "@type": "Question",
-          "name": "What areas do you cover?",
+          "name": "Do you need concrete for installation?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "We cover the entire Phillip Island region including Cowes, Ventnor, Surf Beach, and San Remo."
+            "text": "Not usually. Our system uses deep heavy-duty steel pegs that interlock with the edging, providing immense stability without the mess and expense of concrete footings."
           }
         },
         {
           "@type": "Question",
-          "name": "Are you insured?",
+          "name": "Can you curve the edging onsite?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes, Mr Home Assist is fully insured for all handyman and maintenance work, giving you peace of mind."
+            "text": "Yes! That is our specialty. We supply straight lengths and mechanically curve them onsite to flow perfectly with your garden design. No pre-fabrication required."
           }
         }
       ]
@@ -117,7 +117,7 @@ const schema = JSON.stringify({
 });
 ---
 
-<Layout title="Mr Home Assist | Handyman Phillip Island & San Remo" description="Reliable handyman & building maintenance for Phillip Island. Decks, repairs, and holiday home maintenance. Call 56 789 012." schema={schema}>
+<Layout title="Garden Edge | Corten Steel Garden Edging Mornington Peninsula" description="Premier Corten steel garden edging supply and installation on the Mornington Peninsula. Durable, rust-finish edging for coastal gardens. Call info@gardenedge.com.au." schema={schema}>
 
     <!-- Background Texture -->
     <div class="fixed inset-0 pointer-events-none opacity-[0.4] z-[100] bg-[url('https://www.transparenttextures.com/patterns/concrete-wall.png')] mix-blend-multiply"></div>
@@ -128,35 +128,35 @@ const schema = JSON.stringify({
         <section class="relative w-full pt-40 pb-20 lg:pt-60 lg:pb-40 px-6 overflow-hidden">
             <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
                 <div class="relative z-10">
-                    <div class="inline-flex items-center gap-2 px-4 py-2 bg-sky-50 text-sky-900 rounded-full text-xs font-bold uppercase tracking-wider mb-8 border border-sky-100">
-                        <span class="w-2 h-2 rounded-full bg-orange-500 animate-pulse"></span> Serving Phillip Island & Bass Coast
+                    <div class="inline-flex items-center gap-2 px-4 py-2 bg-amber-50 text-amber-900 rounded-full text-xs font-bold uppercase tracking-wider mb-8 border border-amber-100">
+                        <span class="w-2 h-2 rounded-full bg-orange-600 animate-pulse"></span> Serving Mornington Peninsula & Bayside
                     </div>
                     <h1 class="text-5xl lg:text-7xl font-extrabold text-slate-900 leading-[1.1] mb-8 tracking-tight">
-                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-900 to-sky-700">Mr Home Assist</span> <br />
-                        Handyman Phillip Island.
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-700 to-orange-900">Garden Edge.</span> <br />
+                        Corten Steel Garden Edging <span class="sr-only">Mornington Peninsula</span>.
                     </h1>
                     <p class="text-slate-600 text-lg lg:text-xl mb-10 max-w-lg leading-relaxed">
-                        Reliable <strong class="text-orange-600">Property Maintenance</strong> and <strong class="text-orange-600">Repairs</strong>. From deck rejuvenation to holiday home upkeep, we turn up on time, every time.
+                        Transform your landscape with <strong class="text-amber-800">Corten Steel Edging</strong>. We supply and install premium, long-lasting garden edging that defines your space with a timeless rust finish.
                     </p>
                     <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="mailto:info@mrhomeassist.com.au" class="px-8 py-4 bg-slate-900 text-white rounded-xl font-bold text-lg hover:bg-orange-600 transition-colors shadow-xl flex items-center justify-center gap-2">
+                        <a href="mailto:info@gardenedge.com.au" class="px-8 py-4 bg-slate-900 text-white rounded-xl font-bold text-lg hover:bg-amber-700 transition-colors shadow-xl flex items-center justify-center gap-2">
                             Request Quote
                         </a>
                         <div class="px-8 py-4 bg-white border border-slate-200 text-slate-600 rounded-xl font-medium flex items-center justify-center gap-2 shadow-sm">
-                            <div class="w-5 h-5 text-orange-500" set:html={CheckIcon} /> 25+ Years Exp
+                            <div class="w-5 h-5 text-amber-600" set:html={CheckIcon} /> Lifetime Guarantee
                         </div>
                     </div>
                 </div>
 
                 <div class="relative">
-                    <div class="absolute -inset-4 bg-orange-500/10 rounded-[40px] rotate-3 blur-2xl"></div>
+                    <div class="absolute -inset-4 bg-amber-500/10 rounded-[40px] rotate-3 blur-2xl"></div>
                     <div class="relative rounded-[32px] overflow-hidden shadow-2xl border-4 border-white aspect-[4/3]">
-                        <img src="/images/hero.webp" alt="Phillip Island Decking and Handyman" class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700" />
+                        <img src="/images/hero.webp" alt="Corten Steel Garden Edging Mornington Peninsula" class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700" />
                         
                         {/* Guarantee Badge */}
-                        <div class="absolute bottom-6 left-6 bg-white/95 backdrop-blur p-6 rounded-2xl shadow-xl border border-sky-100 max-w-xs">
-                            <div class="text-orange-600 font-black text-sm uppercase tracking-wider mb-1">Our Promise</div>
-                            <div class="font-bold text-slate-900 text-lg leading-tight">"On Time. Upfront Pricing. Quality Work."</div>
+                        <div class="absolute bottom-6 left-6 bg-white/95 backdrop-blur p-6 rounded-2xl shadow-xl border border-amber-100 max-w-xs">
+                            <div class="text-amber-800 font-black text-sm uppercase tracking-wider mb-1">The Genuine Article</div>
+                            <div class="font-bold text-slate-900 text-lg leading-tight">"High Grade Corten. Not Imitation Rust."</div>
                         </div>
                     </div>
                 </div>
@@ -170,8 +170,8 @@ const schema = JSON.stringify({
         <section id="services" class="w-full py-32 bg-white relative">
             <div class="max-w-7xl mx-auto px-6">
                 <div class="text-center mb-24">
-                    <h2 class="text-3xl lg:text-5xl font-bold text-slate-900 mb-6">Complete Home Maintenance</h2>
-                    <p class="text-slate-500 text-lg max-w-2xl mx-auto">Specializing in coastal property care, deck repairs, and general handyman services for homeowners and real estate managers.</p>
+                    <h2 class="text-3xl lg:text-5xl font-bold text-slate-900 mb-6">Garden Edging Solutions</h2>
+                    <p class="text-slate-500 text-lg max-w-2xl mx-auto">Specializing in high-quality Corten steel edging for DIY supply or professional installation.</p>
                 </div>
 
                 <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -199,23 +199,23 @@ const schema = JSON.stringify({
         <section class="w-full py-32 bg-slate-900 text-slate-300 px-6">
             <div class="max-w-4xl mx-auto">
                 <div class="mb-16">
-                     <span class="text-orange-500 font-bold tracking-widest uppercase text-xs">Technical Specifications</span>
-                     <h2 class="text-4xl lg:text-5xl font-bold text-white mt-4 mb-8">Coastal Building Standards <span class="text-orange-500">Phillip Island</span></h2>
-                     <p class="text-lg text-slate-400">We understand the specific challenges of maintaining property in the Bass Coast's salt-air environment.</p>
+                     <span class="text-amber-500 font-bold tracking-widest uppercase text-xs">Technical Specifications</span>
+                     <h2 class="text-4xl lg:text-5xl font-bold text-white mt-4 mb-8">Designed for the <span class="text-amber-500">Coast</span></h2>
+                     <p class="text-lg text-slate-400">Why Corten Steel is the superior choice for Mornington Peninsula gardens.</p>
                 </div>
 
                 <div class="grid gap-6 mb-24">
-                    <div class="bg-slate-800/50 p-8 rounded-2xl border border-slate-700 hover:border-orange-500/50 transition-colors">
-                        <h4 class="text-white font-bold text-lg mb-2">Salt & Corrosion Protection</h4>
-                        <p class="text-sm leading-relaxed">Phillip Island's salt spray is highly corrosive. We use <strong>316 Marine Grade Stainless Steel</strong> fixtures for all decking and outdoor repairs to prevent rust and ensure longevity, unlike standard galvanised fixings.</p>
+                    <div class="bg-slate-800/50 p-8 rounded-2xl border border-slate-700 hover:border-amber-500/50 transition-colors">
+                        <h4 class="text-white font-bold text-lg mb-2">Salt Spray Resistance</h4>
+                        <p class="text-sm leading-relaxed">Unlike mild steel which rots in coastal air, Corten develops a stable rust-like appearance. This patina acts as a protective coating, preventing further corrosion and making it perfect for Bayside and Peninsula homes.</p>
                     </div>
-                    <div class="bg-slate-800/50 p-8 rounded-2xl border border-slate-700 hover:border-orange-500/50 transition-colors">
-                        <h4 class="text-white font-bold text-lg mb-2">Timber Decking Care</h4>
-                        <p class="text-sm leading-relaxed">Coastal sun and wind strip timber quickly. We recommend and use deep-penetrating oils (like Cutek) rather than surface coatings that peel. This allows the timber to breathe and withstand the expansion/contraction of our variable climate.</p>
+                    <div class="bg-slate-800/50 p-8 rounded-2xl border border-slate-700 hover:border-amber-500/50 transition-colors">
+                        <h4 class="text-white font-bold text-lg mb-2">Native Garden Synergy</h4>
+                        <p class="text-sm leading-relaxed">The earthy, ochre tones of rusted steel provide a stunning contrast to the silver-greens of Coastal Rosemary, Banksias, and native grasses found throughout our region.</p>
                     </div>
-                     <div class="bg-slate-800/50 p-8 rounded-2xl border border-slate-700 hover:border-orange-500/50 transition-colors">
-                        <h4 class="text-white font-bold text-lg mb-2">Holiday Rental Standards</h4>
-                        <p class="text-sm leading-relaxed">For AirBNB and holiday home owners, we provide proactive maintenance checks. We ensure decks are safe, handrails are secure, and properties are compliant with safety standards for guest peace of mind.</p>
+                     <div class="bg-slate-800/50 p-8 rounded-2xl border border-slate-700 hover:border-amber-500/50 transition-colors">
+                        <h4 class="text-white font-bold text-lg mb-2">Zero Maintenance</h4>
+                        <p class="text-sm leading-relaxed">Once installed, Corten edging requires no painting, oiling, or intricate care. It simply gets better with age, blending seamlessly into the landscape.</p>
                     </div>
                 </div>
 
@@ -224,20 +224,20 @@ const schema = JSON.stringify({
                     <h3 class="text-3xl font-bold text-white mb-12">Common Questions</h3>
                     <div class="space-y-8">
                         <div>
-                            <h4 class="text-xl font-bold text-orange-400 mb-2">Where do you service?</h4>
-                            <p class="leading-relaxed">We service the entire Phillip Island area (Cowes, Ventnor, Rhyll, Smiths Beach, Sunderland Bay, Surf Beach, Cape Woolamai, Newhaven) and San Remo.</p>
+                            <h4 class="text-xl font-bold text-amber-400 mb-2">Where do you service?</h4>
+                            <p class="leading-relaxed">We service the entire Mornington Peninsula and Bayside areas, from Frankston down to Portsea, and across to Western Port (Balnarring, Flinders).</p>
                         </div>
                         <div>
-                            <h4 class="text-xl font-bold text-orange-400 mb-2">Do you charge for quotes?</h4>
-                            <p class="leading-relaxed">No. We provide free, upfront quotes for all jobs. We believe in transparency so you know exactly what the job will cost before we start.</p>
+                            <h4 class="text-xl font-bold text-amber-400 mb-2">Do you supply to the public?</h4>
+                            <p class="leading-relaxed">Yes. We offer "Supply Only" packages for DIY enthusiasts. We can deliver the steel strips, pegs, and joiners directly to your door.</p>
                         </div>
                         <div>
-                            <h4 class="text-xl font-bold text-orange-400 mb-2">Can you fix my rotting deck?</h4>
-                            <p class="leading-relaxed">Yes. Deck repairs are a specialty. We can assess if the sub-structure is sound and simply replace the decking boards, or if structural repairs are needed. We try to save the deck where possible to save you money.</p>
+                            <h4 class="text-xl font-bold text-amber-400 mb-2">How deep does the edging go?</h4>
+                            <p class="leading-relaxed">Standard edging is 100mm or 150mm high. We verify your soil depth before installation. Approximately 1/3 of the edge is usually buried for stability, but this varies by design.</p>
                         </div>
                         <div>
-                            <h4 class="text-xl font-bold text-orange-400 mb-2">Do you do small jobs?</h4>
-                            <p class="leading-relaxed">Absolutely. From fixing a sticking door, hanging a picture, or patching a hole in the plaster, no job is too small. That's what a good handyman is for!</p>
+                            <h4 class="text-xl font-bold text-amber-400 mb-2">Can it be used for retaining?</h4>
+                            <p class="leading-relaxed">It is primarily for separation, but can retain small heights (up to 200mm). For higher retaining walls, we recommend heavier gauge steel or different engineering.</p>
                         </div>
                     </div>
                 </div>

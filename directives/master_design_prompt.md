@@ -3,17 +3,17 @@
 ## 1. Setup: Business Details (USER: FILL THIS IN)
 **Copy and paste this section with your specific details before running the prompt.**
 
-*   **Business Name:** Mr Home Assist
-*   **Primary Service:** Handyman, Building Maintenance
-*   **Target Area:** Phillip Island, Vic. Bass Coast, San Remo
-*   **Contact Info:** info@mrhomeassist.com.au, 56 789 012
-*   **Key Differentiators:** Ontime, Upfront Pricing, 25+ years of experience
-*   **Target Audience:** Homeowners (Living in, Air BNB, Holiday homes), Real Estate managers
-*   **Tone of Voice:** Friendly but authoritative
-*   **Brand Colors:** #0C4A6E (Deep Navy), #F97316 (Safety Orange)
+*   **Business Name:** Garden Edge
+*   **Primary Service:** Supply only or supply and install Corten steel garden edging
+*   **Target Area:** Mornington Penninsula, Bayside, South Eastern Suburbs, Bass Coast, Phillip Island
+*   **Contact Info:** info@gardenedge.com.au
+*   **Key Differentiators:** Highest Quality, Long Lasting, Best Looking over time
+*   **Target Audience:** Home owners, Property developers
+*   **Tone of Voice:** Confident, friendly
+*   **Brand Colors:** #8B4513 (SaddleBrown - Corten Rust), #2F4F4F (DarkSlateGray - Landscape)
 *   **Logo:** public/logo.png
-*   **Custom Domain:** mrhomeassist.com.au
-*   **Must-Use Keywords:** Handyman Phillip Island, Handyman Cowes, Handyman Bass Coast, Deck repairs, Deck rejuvenation
+*   **Custom Domain:** gardenedge.com.au
+*   **Must-Use Keywords:** corten steel garden edging, corten garden edging, corten steel garden edge​, corten garden edge, garden edging corten steel, corten steel garden edging melbourne, corten steel rust garden edging​, corten garden edging melbourne
 
 ---
 

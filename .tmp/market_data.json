@@ -1,77 +1,63 @@
 {
     "competitors": [
         {
-            "name": "Fix Anything Build Anything",
-            "url": "https://homefixphillipisland.com.au",
+            "name": "Garden Edging Supplies",
+            "url": "https://gardenedgingsupplies.com.au",
             "services": [
-                "Renovations",
-                "General Repairs"
+                "Supply of rings",
+                "Corten edging delivery"
             ],
-            "pros": "Established 2008, Trusted",
-            "cons": "Generic branding"
+            "pros": "High praise for service and product quality",
+            "cons": "Primarily supply focused"
         },
         {
-            "name": "1 Call We Fix All",
-            "url": "https://www.yellowpages.com.au/vic/cowes/1-call-we-fix-all-15340058-listing.html",
+            "name": "Huddlestone Landscapes",
+            "url": "https://huddlestone.com.au",
             "services": [
-                "Property Maintenance",
-                "Bass Coast Coverage"
+                "Installation",
+                "Landscape Design"
             ],
-            "pros": "Wide coverage",
-            "cons": "No dedicated website found (YP listing)"
+            "pros": "Aesthetic focus, functional designs",
+            "cons": "Full landscaping service (might be expensive for just edging)"
         },
         {
-            "name": "Monki's Maintenance",
-            "url": "https://www.yellowpages.com.au/vic/surf-beach/monkis-maintenance-1000001552885-listing.html",
+            "name": "Coastal Creations Landscaping",
+            "url": "https://coastalcreationslandscaping.com.au",
             "services": [
-                "Home Maintenance",
-                "Surf Beach area"
+                "Steel edging installation",
+                "Coastal designs"
             ],
-            "pros": "Local specialist",
-            "cons": "Limited digital presence"
+            "pros": "Specializes in steel edging",
+            "cons": "None listed"
         }
     ],
     "common_services": [
-        "Deck Repairs",
-        "Painting",
-        "General Maintenance",
-        "Tiling",
-        "Carpentry"
+        "Supply",
+        "Installation",
+        "Curved Edging",
+        "Straight lengths"
     ],
     "niche_services": [
-        "Salt Corrosion Treatment",
-        "Holiday Home Maintenance",
-        "Deck Rejuvenation"
+        "Corten Rings",
+        "Custom curving"
     ],
     "visual_style": {
         "colors": [
-            "#0C4A6E",
-            "#F97316"
+            "#8B4513",
+            "#2F4F4F"
         ],
-        "imagery": "Coastal residential, weathered timber vs restored timber, ocean views, modern tools"
+        "imagery": "Coastal gardens, native plants (Banksia, Kangaroo Paw), rusted steel contrast against green"
     },
     "geo_keywords": [
-        "Phillip Island",
-        "Cowes",
-        "San Remo",
-        "Bass Coast",
-        "Surf Beach"
+        "Mornington Peninsula",
+        "Salt spray",
+        "Sandy soil",
+        "Native garden"
     ],
-    "local_context": {
-        "problems": [
-            "Salt spray corrosion",
-            "UV damage to timber",
-            "High humidity mold"
-        ],
-        "regulations": "Bass Coast Shire planning schemes for overlays",
-        "entities": [
-            "Western Port Bay",
-            "Bass Strait",
-            "The Nobbies"
-        ]
-    },
-    "visual_strategy": {
-        "hero_concept": "High-end timber deck needing maintenance vs restored section, with ocean glimpse",
-        "aesthetic": "Coastal Industrial, rugged but premium"
-    }
+    "local_plants": [
+        "Banksia",
+        "Coastal Rosemary",
+        "Kangaroo Paw",
+        "Tussock Grass"
+    ]
 }

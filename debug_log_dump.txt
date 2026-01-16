@@ -1,9 +1,11 @@
 Starting deployment of stevenraykelly-arch/mr-home-assist:main to DO-Trade-Factory-01.
 Preparing container with helper image: ghcr.io/coollabsio/coolify-helper:1.0.12
-Error response from daemon: No such container: lw0ccc8o8408sc4c4gsg04ws
-6941c00a7924fcb002585a2b747b7b57b6db35465678ea71e0f08143be61c397
-860266a1df842c420bd29e95934f1bb8d9874c82	refs/heads/main
-Image not found (bokk8sowsccckgssoo4s80go:860266a1df842c420bd29e95934f1bb8d9874c82). Building new image.
+Error response from daemon: No such container: d0sw0wog0gk88ogwg8w8cw0s
+4a123a72d76059c2b59e10d384875c61b76557f2f187aa1ca3b0bcea105bba32
+ed769fc56fe18a55dff752fc8deeca351ef30cd9	refs/heads/main
+Image not found (bokk8sowsccckgssoo4s80go:ed769fc56fe18a55dff752fc8deeca351ef30cd9). Building new image.
 ----------------------------------------
-Importing stevenraykelly-arch/mr-home-assist:main (commit sha 860266a1df842c420bd29e95934f1bb8d9874c82) to /artifacts/lw0ccc8o8408sc4c4gsg04ws.
-Cloning into '/artifacts/lw0ccc8o8408sc4c4gsg04ws'...
+Importing stevenraykelly-arch/mr-home-assist:main (commit sha ed769fc56fe18a55dff752fc8deeca351ef30cd9) to /artifacts/d0sw0wog0gk88ogwg8w8cw0s.
+Cloning into '/artifacts/d0sw0wog0gk88ogwg8w8cw0s'...
+feat: add dynamic location pages and update audit protocol
+Generating nixpacks configuration with: nixpacks plan -f json --env NIXPACKS_NODE_VERSION=22 --env COOLIFY_URL=http://bokk8sowsccckgssoo4s80go.170.64.136.227.sslip.io --env COOLIFY_FQDN=bokk8sowsccckgssoo4s80go.170.64.136.227.sslip.io --env COOLIFY_BRANCH=main --env COOLIFY_RESOURCE_UUID=bokk8sowsccckgssoo4s80go /artifacts/d0sw0wog0gk88ogwg8w8cw0s
