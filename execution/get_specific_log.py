@@ -12,7 +12,7 @@ headers = {
     "Content-Type": "application/json"
 }
 
-dep_uuid = "h4w88wo8gg0sw4840gkg8c8g"
+dep_uuid = "hgkoo8ssgco0g4cwcogoo044"
 
 print(f"Fetching logs for specific deployment {dep_uuid}...")
 resp = requests.get(f"{api_url}/deployments/{dep_uuid}", headers=headers)
