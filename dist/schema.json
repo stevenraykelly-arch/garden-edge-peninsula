@@ -1,0 +1,54 @@
+{
+    "@context": "https://schema.org",
+    "@type": "ServiceAreaBusiness",
+    "name": "Brisbane Bitumen & Lines Co.",
+    "image": "https://brisbanebitumenlines.com.au/images/hero.png",
+    "telecommunications": "1300 248 863",
+    "url": "https://brisbanebitumenlines.com.au",
+    "email": "quotes@brisbanebitumenlines.com.au",
+    "description": "Professional bitumen repairs, asphalt laying, and car park line marking servicing Greater Brisbane, Ipswich, Logan, and Moreton Bay.",
+    "areaServed": [
+        {
+            "@type": "City",
+            "name": "Brisbane"
+        },
+        {
+            "@type": "City",
+            "name": "Ipswich"
+        },
+        {
+            "@type": "City",
+            "name": "Logan"
+        },
+        {
+            "@type": "City",
+            "name": "Redlands"
+        },
+        {
+            "@type": "City",
+            "name": "Moreton Bay"
+        }
+    ],
+    "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Asphalt & Line Marking Services",
+        "itemListElement": [
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Bitumen Pothole & Patch Repairs",
+                    "description": "Fast-response repair services for roads and private driveways."
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Car Park Line Marking",
+                    "description": "Precision line marking for commercial and industrial parking lots."
+                }
+            }
+        ]
+    }
+}
