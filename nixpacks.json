@@ -1,0 +1,20 @@
+{
+    "phases": {
+        "setup": {
+            "nixPkgs": [
+                "nodejs_20",
+                "npm-9_x"
+            ]
+        },
+        "install": {
+            "cmds": [
+                "npm ci"
+            ]
+        },
+        "build": {
+            "cmds": [
+                "npm run build"
+            ]
+        }
+    }
+}
