@@ -1,0 +1,19 @@
+name: Deploy to BunnyCDN
+on: [push]
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install and Build
+        run: |
+          npm ci
+          npm run build
+      - name: Upload to BunnyCDN
+        uses: ayashige/bunnycdn-storage-deploy@v1
+        with:
+          source: "dist" 
+          storageZoneName: "bunny-bulk-store1-sydney"
+          storagePassword: "Bunnycdn321#"
+          accessKey: "55264c80-ed5f-441c-acc2-5863bf97794976dc5eaf-47c0-4fb7-b7c9-440916cf70f5"
+          upload: "true"

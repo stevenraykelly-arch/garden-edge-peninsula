@@ -1,20 +1,6 @@
-# Build
-
-.next/
 node_modules/
-.astro/
-
-# Environment
+dist/
 .env
-.env.*
-!.env.example
-*.env
-config.env
-
-# Secrets
-execution/service_account.json
-service_account.json
-
-# OS
 .DS_Store
-Thumbs.db
+.next/
+.astro/
