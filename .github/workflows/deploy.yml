@@ -12,7 +12,7 @@ jobs:
         with:
           source: "dist" 
           storageZoneName: "bunny-bulk-store1-sydney"
-          storageEndpoint: "sydney.storage.bunnycdn.com"
+          storageEndpoint: "syd.storage.bunnycdn.com"
           storagePassword: "${{ secrets.BUNNY_STORAGE_PASSWORD }}"
           accessKey: "${{ secrets.BUNNY_ACCESS_KEY }}"
           upload: "true"
