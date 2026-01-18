@@ -11,7 +11,8 @@ jobs:
         uses: ayeressian/bunnycdn-storage-deploy@v2.2.5
         with:
           source: "dist" 
-          storageZoneName: "GardenEdge1"
+          storageZoneName: "bunny-bulk-store1-sydney"
+          storageEndpoint: "sydney.storage.bunnycdn.com"
           storagePassword: "${{ secrets.BUNNY_STORAGE_PASSWORD }}"
           accessKey: "${{ secrets.BUNNY_ACCESS_KEY }}"
           upload: "true"
