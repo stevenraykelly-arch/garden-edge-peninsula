@@ -1,6 +1,8 @@
 node_modules/
 dist/
 .env
+config.env
+execution/service_account.json
 .DS_Store
 .next/
 .astro/

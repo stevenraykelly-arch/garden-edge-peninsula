@@ -12,7 +12,7 @@
 *   **Tone of Voice:** Confident, friendly
 *   **Brand Colors:** #8B4513 (SaddleBrown - Corten Rust), #2F4F4F (DarkSlateGray - Landscape)
 *   **Logo:** public/logo.png
-*   **Custom Domain:** gardenedge.com.au
+*   **Custom Domain:** `https://localrankadvantage.shop`
 *   **Must-Use Keywords:** corten steel garden edging, corten garden edging, corten steel garden edge​, corten garden edge, garden edging corten steel, corten steel garden edging melbourne, corten steel rust garden edging​, corten garden edging melbourne
 
 ---
