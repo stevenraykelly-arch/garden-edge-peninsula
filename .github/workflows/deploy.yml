@@ -23,5 +23,5 @@ jobs:
       - name: Purge Cache
         run: |
             curl --request POST \
-            --url https://api.bunny.net/pullzone/5179130/purgeCache \
+            --url https://api.bunny.net/pullzone/5179972/purgeCache \
             --header 'AccessKey: ${{ secrets.BUNNY_ACCESS_KEY }}'
