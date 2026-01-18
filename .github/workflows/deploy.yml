@@ -7,9 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Install and Build
+      - name: Build for BunnyCDN
         run: |
-          npm ci
+          npm install
           npm run build
       - name: Upload to BunnyCDN
         uses: ayeressian/bunnycdn-storage-deploy@v2.2.5
