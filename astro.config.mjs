@@ -5,7 +5,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-    site: 'https://localrankadvantage.shop',
+    site: 'https://www.localrankadvantage.shop',
     integrations: [tailwind() /*, sitemap() */],
     server: {
         host: true
