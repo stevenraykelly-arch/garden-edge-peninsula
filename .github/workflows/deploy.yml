@@ -1,6 +1,11 @@
 name: Deploy to BunnyCDN
 on: 
   push:
+    branches: [ main ]
+    # Strategy: "Zero-Resource Deployment"
+    # 1. User builds locally (npm run build)
+    # 2. User pushes 'dist/' folder to git
+    # 3. This workflow simply uploads 'dist/' to BunnyCDN (no build step here)
   workflow_dispatch:
 jobs:
   deploy:
