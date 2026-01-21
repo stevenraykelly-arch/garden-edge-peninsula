@@ -13,8 +13,8 @@ export function getStaticPaths() {
 const { location } = Astro.params;
 const { name, post_code } = Astro.props;
 
-const title = `Service in ${name} | Business Name`;
-const description = `Providing professional services in ${name} ${post_code}. Local experts for the ${name} area.`;
+const title = `Msg Retaining Walls ${name} | Retaining Walls Melbourne`;
+const description = `Professional retaining wall construction and repair in ${name} ${post_code}. Concrete sleepers, timber walls and engineering for the ${name} area.`;
 ---
 
 <Layout title={title} description={description}>
@@ -25,8 +25,8 @@ const description = `Providing professional services in ${name} ${post_code}. Lo
         </section>
         
         <section class="py-20 px-6 max-w-7xl mx-auto">
-            <h2 class="text-3xl font-bold mb-8 text-slate-900">Why {name} chooses us</h2>
-            <p class="mb-6">Content specific to the {name} area goes here.</p>
+            <h2 class="text-3xl font-bold mb-8 text-slate-900">Retaining Walls in {name}</h2>
+            <p class="mb-6">We understand the specific soil conditions in {name}, providing engineered solutions that last. Whether you need a new concrete sleeper wall or repairs to an existing timber structure, we are your local experts.</p>
         </section>
     </main>
 </Layout>
