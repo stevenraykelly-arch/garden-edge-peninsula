@@ -88,9 +88,9 @@ const { title, seoTitle, seoDesc, heroImage, intro, content } = Astro.props;
     <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-slate-900">
         <div class="absolute inset-0 z-0">
              <!-- Overlay -->
-            <div class="absolute inset-0 bg-slate-900/90 z-10"></div>
-            <!-- Background Image (Optional, using the service image or a generic concrete texture) -->
-            <img src={heroImage} alt={title} class="w-full h-full object-cover opacity-30" />
+            <div class="absolute inset-0 bg-slate-900/60 z-10"></div>
+            <!-- Background Image -->
+            <img src={heroImage} alt={title} class="w-full h-full object-cover opacity-100" />
         </div>
 
         <div class="relative z-10 max-w-7xl mx-auto px-6 text-center">
