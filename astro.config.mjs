@@ -5,7 +5,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-    site: 'https://www.localrankadvantage.shop',
+    site: 'https://www.example.com',
     integrations: [tailwind() /*, sitemap() */],
     server: {
         host: true
@@ -15,10 +15,7 @@ export default defineConfig({
     },
     vite: {
         server: {
-            allowedHosts: ['localrankadvantage.shop', 'www.localrankadvantage.shop', 'bokk8sowsccckgssoo4s80go.170.64.136.227.sslip.io']
-        },
-        preview: {
-            allowedHosts: ['localrankadvantage.shop', 'www.localrankadvantage.shop', 'bokk8sowsccckgssoo4s80go.170.64.136.227.sslip.io']
+            allowedHosts: ['localhost', '.sslip.io']
         }
     }
 });

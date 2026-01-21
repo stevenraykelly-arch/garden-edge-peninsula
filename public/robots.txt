@@ -1,3 +1,4 @@
 User-agent: *
-AllHost: https://localrankadvantage.shop
-Sitemap: https://localrankadvantage.shop/sitemap.xml
+Disallow:
+
+Sitemap: /sitemap-index.xml

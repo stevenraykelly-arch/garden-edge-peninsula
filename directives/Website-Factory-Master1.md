@@ -1,33 +1,19 @@
 # Universal Master Design & Development Prompt: The "Librarian-Grade" Build
 
-## 1. Setup: Business Details
-*   **Business Name:** Retaining Walls Melbourne
-*   **Primary Service:** New concrete sleeper retaining walls, new timber sleeper retaining walls, retaining wall repair
-*   **Target Area:** Melbourne South Eastern Suburbs
-*   **Contact Info:** info@retainingwalls.com
-*   **Key Differentiators:** Professional Service, Ontime, Australian product
-*   **Target Audience:** Home Owners, Business owners, all property owners
-*   **Tone of Voice:** Highly professional friendly people
+## 1. Setup: Business Details (USER: FILL THIS IN)
+**Copy and paste this section with your specific details before running the prompt.**
+
+*   **Business Name:** [Business Name]
+*   **Primary Service:** [Primary Service e.g. "Emergency Plumbing"]
+*   **Target Area:** [Target City, Region, or Suburbs]
+*   **Contact Info:** [Email or Phone]
+*   **Key Differentiators:** [e.g. 24/7 Service, Licensed & Insured, Family Owned]
+*   **Target Audience:** [e.g. Homeowners, Commercial, Property Managers]
+*   **Tone of Voice:** [e.g. Professional, Friendly, Urgent, High-End]
 *   **Brand Colors:** [Primary Hex], [Secondary Hex]
 *   **Logo:** public/logo.png
-*   **Custom Domain:** `https://retainingwalls.com`
-*   **Must-Use Keywords:** retaining wall builders melbourne, concrete retaining wall builders, retaining wall builder melbourne, retaining wall contractors melbourne, retaining wall installation melbourne, retaining wall construction melbourne, retaining walls melbourne, retaining wall quotes melbourne, retaining wall builder {SUBURB}, retaining wall installers {SUBURB}, concrete sleeper retaining wall {SUBURB}, retaining wall repair {SUBURB}, retaining wall company melbourne, retaining wall repair melbourne, retaining wall replacement melbourne, leaning retaining wall repair melbourne, retaining wall drainage repair melbourne, cracked retaining wall repair melbourne, failed retaining wall repair melbourne, retaining wall builder Glen Waverley, retaining wall builder Mount Waverley, retaining wall builder Burwood, retaining wall builder Box Hill, retaining wall builder Blackburn, retaining wall builder Nunawading, retaining wall builder Doncaster, retaining wall builder Templestowe, retaining wall builder Ringwood, retaining wall builder Croydon, retaining wall builder Wantirna, retaining wall builder Ferntree Gully
-
-## 1.1 Research Findings (Automated)
-**Competitor Landscape (South East Melbourne):**
-*   **Tuff Stuff Retaining Walls:** Specializes in durable sleeper, timber, rock walls.
-*   **Jamesco Group:** 15+ years experience, residential & commercial, gabion/rock/timber options.
-*   **South East Decks & Pergolas:** Timber, rock, steel-reinforced concrete.
-
-**Local Terrain & Conditions (Entity Extraction):**
-*   **Soil Types:** "Reactive Clay" (common in East/South East, requires deep footings/engineering), "Sandy Soil" (Sandbelt areas, requires specific drainage).
-*   **Regulations:** Building permit usually required for >1m height or <1.5m from building/boundary. Council approval (Casey, Monash, Cardinia, Frankston) often needed for easements.
-*   **Key Entities:** City of Casey, Monash City Council, Cardinia Shire, Greater Dandenong.
-
-**Refined Keyword Strategy:**
-*   **Primary:** "Retaining Wall Builders Melbourne South East", "Concrete Sleeper Retaining Walls Melbourne", "Timber Retaining Wall Installation".
-*   **Long-Tail/Questions:** "Do I need a permit for retaining wall Melbourne?", "Retaining wall cost per meter Melbourne", "How to fix leaning retaining wall clay soil".
-*   **Local Modifiers:** "South Eastern Suburbs", "Glen Waverley", "Mornington Peninsula", "Bayside".
+*   **Custom Domain:** `https://[your-domain].com`
+*   **Must-Use Keywords:** [List 5-10 high value keywords comma separated]
 
 ---
 

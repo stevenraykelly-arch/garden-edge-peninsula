@@ -1,0 +1,23 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import SEO from '../../components/SEO.astro';
+
+const serviceName = "Service Example";
+const serviceDescription = "A generic description of this service offering.";
+---
+
+<Layout title={`${serviceName} | Business Name`} description={serviceDescription}>
+    <main class="py-20 px-6 max-w-7xl mx-auto">
+        <h1 class="text-4xl font-bold mb-6">{serviceName}</h1>
+        <p class="text-lg text-slate-600 mb-8">{serviceDescription}</p>
+        <div class="prose max-w-none">
+            <p>This is a placeholder for detailed service content. In a real build, this would contain:</p>
+            <ul>
+                <li>Benefit 1</li>
+                <li>Benefit 2</li>
+                <li>Process Description</li>
+                <li>Pricing / Packages</li>
+            </ul>
+        </div>
+    </main>
+</Layout>

@@ -1,0 +1,32 @@
+
+> website-factory-master1@0.1.0 build
+> astro build
+
+23:21:05 [types] Generated 120ms
+23:21:05 [build] output: "static"
+23:21:05 [build] directory: C:\Users\srkel\Downloads\Website-builder-antigravity-at-scale\dist\
+23:21:05 [build] Collecting build info...
+23:21:05 [build] Γ£ô Completed in 212ms.
+23:21:05 [build] Building static entrypoints...
+23:21:06 [vite] [32mΓ£ô built in 1.45s[39m
+23:21:06 [build] Γ£ô Completed in 1.49s.
+
+ generating static routes 
+23:21:06 Γû╢ src/pages/locations/[location].astro
+23:21:06   Γö£ΓöÇ /locations/location-a/index.html (+11ms)
+23:21:06   ΓööΓöÇ /locations/location-b/index.html (+3ms)
+23:21:07 Γû╢ src/pages/privacy-policy.astro
+23:21:07   ΓööΓöÇ /privacy-policy/index.html (+3ms)
+23:21:07 Γû╢ src/pages/services/service-example.astro
+23:21:07   ΓööΓöÇ /services/service-example/index.html (+3ms)
+23:21:07 Γû╢ src/pages/thank-you.astro
+23:21:07   ΓööΓöÇ /thank-you/index.html (+2ms)
+23:21:07 Γû╢ src/pages/index.astro
+CheckIcon is not defined
+  Stack trace:
+    at Object.default (file:///C:/Users/srkel/Downloads/Website-builder-antigravity-at-scale/dist/pages/index.astro.mjs?time=1768998067012:106:201)
+    at createAstroComponentInstance (file:///C:/Users/srkel/Downloads/Website-builder-antigravity-at-scale/dist/chunks/astro/server_B3_TUemF.mjs:1074:20)
+    at renderComponent (file:///C:/Users/srkel/Downloads/Website-builder-antigravity-at-scale/dist/chunks/astro/server_B3_TUemF.mjs:1563:12)
+    at index (file:///C:/Users/srkel/Downloads/Website-builder-antigravity-at-scale/dist/chunks/astro/server_B3_TUemF.mjs:144:12)
+    at renderToString (file:///C:/Users/srkel/Downloads/Website-builder-antigravity-at-scale/node_modules/astro/dist/runtime/server/render/astro/render.js:8:32)
+23:21:07   ΓööΓöÇ /index.html

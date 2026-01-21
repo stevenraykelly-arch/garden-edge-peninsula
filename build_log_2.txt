@@ -1,0 +1,29 @@
+
+> website-factory-master1@0.1.0 build
+> astro build
+
+23:24:49 [types] Generated 129ms
+23:24:49 [build] output: "static"
+23:24:49 [build] directory: C:\Users\srkel\Downloads\Website-builder-antigravity-at-scale\dist\
+23:24:49 [build] Collecting build info...
+23:24:49 [build] Γ£ô Completed in 213ms.
+23:24:49 [build] Building static entrypoints...
+23:24:50 [vite] [32mΓ£ô built in 1.43s[39m
+23:24:50 [build] Γ£ô Completed in 1.47s.
+
+ generating static routes 
+23:24:50 Γû╢ src/pages/locations/[location].astro
+23:24:50   Γö£ΓöÇ /locations/location-a/index.html (+10ms)
+23:24:50   ΓööΓöÇ /locations/location-b/index.html (+3ms)
+23:24:50 Γû╢ src/pages/privacy-policy.astro
+23:24:50   ΓööΓöÇ /privacy-policy/index.html (+3ms)
+23:24:50 Γû╢ src/pages/services/service-example.astro
+23:24:50   ΓööΓöÇ /services/service-example/index.html (+3ms)
+23:24:50 Γû╢ src/pages/thank-you.astro
+23:24:50   ΓööΓöÇ /thank-you/index.html (+3ms)
+23:24:50 Γû╢ src/pages/index.astro
+23:24:50   ΓööΓöÇ /index.html (+4ms)
+23:24:50 Γ£ô Completed in 46ms.
+
+23:24:50 [build] 6 page(s) built in 1.84s
+23:24:50 [build] Complete!
